@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "gatsby": "^2.21.37",
+    "gatsby-plugin-manifest": "^2.4.11",
     "gatsby-plugin-sass": "^2.3.2",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
