@@ -55,18 +55,11 @@
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
 9. **When making certain changes**
+
   If you need to add a plug in or a another resource like a image you will need to stop running your site by going to your terminal and hitting control + c. Make sure your changes are saved and run "gatsby develop" again to see your changes in your local browser. 
 
-10. **Once you finish making changes, push your commit to your branch.**
-
-  ```shell
-    # stage your changes
-    git add .
-    # commit your changes with a message
-    git commit -m " update message"
-    # push changes to master
-    git push 
-    ```
+10. **Once you finish making changes, push your commit to your branch and do a pull request on master.**
+    
 11. **After reviewing, your changes will be merged to the master branch.** 
 
 ## 🧐 What's inside?
