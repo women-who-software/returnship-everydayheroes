@@ -21,31 +21,32 @@
     Use the Git CLI to clone this repo to your local machine.
 
     ```shell
-    # clone the master branch/repo to your local machine and folder of choice , ex local-returnship
-    git clone https://github.com/wwcodecolorado/returnship-everydayheroes.git local-returnship
-    
-    ```
-5. **Before making any changes, create a branch in your name with issue number.** 
-
-    ```shell
-    # create your own branch to work on ex. rafna or rafna-issue21
-    git branch [branch-name]
+    # clone the master branch/repo to your local machine and folder of choice 
+    git clone https://github.com/wwcodecolorado/returnship-everydayheroes.git 
     
     ```
 
-6.  **Pull down the node modules**
+5.  **Pull down the node modules**
     ```shell
     # pull down the needed npm modules to run the site
     npm install 
     ```
 
-7.  **Start up your local site.**
+6.  **Start up your local site.**
 
     Navigate into the site’s directory and start it up.
 
     ```shell
-    cd local-returnship/
+    cd your-project-folder
     gatsby develop
+    ```
+    
+7. **Before making any changes, create a branch in your name with issue number.** 
+
+    ```shell
+    # create your own branch to work on ex. rafna or rafna-issue21
+    git branch [branch-name]
+    
     ```
 
 8.  **Open the source code and start editing/ coding !**
