@@ -1,31 +1,14 @@
-/* import React from 'react'
-
-import formStyles from './form.module.scss'
-
-
-const StoryForm = () =>{
-    return (
-
-        <form className={formStyles.body} name="share-your-story" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-                <input type="hidden" name="bot-field" />
-                <input type="hidden" name="form-name" value="share-your-story" />
-
-                  </div>
-
-            </form>
-    )
-}
-
-export default StoryForm */
-
 import React from "react";
 import { useForm } from "react-hook-form";
 import * as Yup from "yup";
 
 import formStyles from './form.module.scss'
 
-const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
+//This RegEx(regular expression) can easily check whether a user has entered something that looks like a valid US phone number.
+const phoneRegExp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 
+// Using lib YUP here to validate the rest of the form inputs. 
+// Specifying if a input is required and what message is displayed if validation fails.  
 const ShareYourStorySchema = Yup.object().shape({
     fullName: Yup.string().required(' Please enter your full name'),
     location: Yup.string().required(' Please enter your location'),
@@ -40,24 +23,29 @@ export default function StoryForm() {
   validationSchema: ShareYourStorySchema
   });
   const onSubmit = data => {
-    alert(JSON.stringify(data));
+    // use this to test out form locally
+    //alert(JSON.stringify(data));
+    // data-netlify="true" on the form field below ensures submit is sent to netlify 
   };
 
   return (
-      <div class ="row" className={formStyles.row}>
-        <div class="container" className={formStyles.flex_container}>
+      <div className={formStyles.row}>
+        <div className={formStyles.flex_container}>
 
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(onSubmit)} name="share-your-story" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="bot-field" aria-label= "Hidden botfield input" />
+            <input type="hidden" name="form-name" value="share-your-story" aria-label= "Hidden form name "/>
 
             <h3 className={formStyles.logo_title}>SHARE YOUR STORY</h3>
 
-            <div class="row" className={formStyles.row} >
-                <div class="col_50" className={formStyles.col_50}>
+            <div className={formStyles.row} >
+                <div className={formStyles.col_50}>
                     <div className="Fullname_area">
                         <label htmlFor="fullName"> Full Name</label>
                         <input 
                         type="text" 
-                        name="fullName" 
+                        className="fullName" 
+                        name="fullName"
                         id = "fullName" 
                         placeholder="Jane Smith" 
                         ref={register} 
@@ -78,7 +66,7 @@ export default function StoryForm() {
                     </div>
                 </div>
             
-                <div class="col_50" className={formStyles.col_50}>
+                <div className={formStyles.col_50}>
                     <div className="Email_area">
                         <label htmlFor="email">Email</label>
                         <input 
