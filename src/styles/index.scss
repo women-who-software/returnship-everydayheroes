@@ -9,6 +9,7 @@ html {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
   }
   article,
   aside,
@@ -230,7 +231,7 @@ html {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin-bottom: .45rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -264,7 +265,7 @@ html {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin-bottom: .45rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -386,7 +387,7 @@ html {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
+    //margin-bottom: 1.45rem;
   }
   figure {
     margin-left: 0;
@@ -594,7 +595,7 @@ html {
   code {
     background-color: hsla(0, 0%, 0%, 0.04);
     border-radius: 3px;
-    font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
+    font-family: "SFMonoff-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
       "Liberation Mono", Menlo, Courier, monospace;
     padding: 0;
     padding-top: 0.2em;
@@ -617,7 +618,7 @@ html {
   pre tt:after {
     content: "";
   }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 800px) {
     html {
       font-size: 100%;
     }
