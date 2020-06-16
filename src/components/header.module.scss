@@ -15,25 +15,24 @@
 }
 
 .nav_item {
-    color: #999999;
+    color: #fff;
     font-size: .9 rem;
     margin-right: 1.3rem;
-    text-decoration: none;align-self: auto;
+    text-decoration: none;
+    align-self: auto;
 
 }
 
 .nav_item:hover {
-    //color: #666666;
-    color: #91c0f2;
+    color: #512F88;
 
 }
 
 .active_nav_item {
-    //color: #333333;
     color: #177dea;
 }
 
 
 .link {
-    color: #999999;
+    color: #177dea;
 }
