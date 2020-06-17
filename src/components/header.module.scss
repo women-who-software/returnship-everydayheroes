@@ -1,10 +1,22 @@
+.headerContainer {
+  //padding: 1rem 0 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  background-image: linear-gradient(to right, #152fc1, #512f88);
+  top: 0;
+  left: 0;
+  height: 200px;
+}
 .header {
   padding: 1rem 0 2rem;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 .title {
-  color: #fff;
-  font-size: 3rem;
+  //color: #fff;
+  //font-size: 3rem;
   text-decoration: none;
 }
 
@@ -25,11 +37,11 @@
 }
 
 .nav_item:hover {
-  color: #512f88;
+  color: #177dea;
 }
 
 .active_nav_item {
-  color: #177dea;
+  color: #005bbb;
 }
 
 .link {

@@ -12,6 +12,7 @@ body {
   background-color: #40ade7;
   background-image: linear-gradient(#40ade7, #512f88);
 }
+
 article,
 aside,
 details,
@@ -633,6 +634,7 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
 @media only screen and (max-width: 800px) {
   html {
     font-size: 100%;
