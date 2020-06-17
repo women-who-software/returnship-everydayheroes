@@ -1,37 +1,41 @@
 .header {
-    padding: 1rem 0 3rem;
+  //padding: 1rem 0 3rem;
+  background-image: linear-gradient(to right, #152fc1, #522e87);
+  display: flex;
+  padding-top: 1rem;
 }
 
 .title {
-    color:#000000;
-    font-size: 3rem;
-    text-decoration: none;
+  color: #ffffff;
+  font-size: 3rem;
+  text-decoration: none;
+  margin-left: 30px;
+  padding-right: 30px;
 }
 
 .nav_list {
-    display : flex;
-    list-style-type: none;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  //margin: 0, auto;
+  margin-top: 25px;
 }
 
 .nav_item {
-    color: #999999;
-    font-size: .9 rem;
-    margin-right: 1.3rem;
-    text-decoration: none;
-
+  color: #fff;
+  font-size: 0.9 rem;
+  margin-right: 1.3rem;
+  text-decoration: none;
 }
 
 .nav_item:hover {
-    color: #666666;
-
+  color: #11b9f0;
 }
 
 .active_nav_item {
-    color: #333333;
+  color: #11b9f0;
 }
 
-
 .link {
-    color: #999999;
+  color: #11b9f0;
 }
