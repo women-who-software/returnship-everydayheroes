@@ -6,7 +6,7 @@
   background-image: linear-gradient(to right, #152fc1, #512f88);
   top: 0;
   left: 0;
-  height: 200px;
+  height: 180px;
 }
 .header {
   padding: 1rem 0 2rem;
@@ -25,7 +25,7 @@
   align-items: center;
   list-style-type: none;
   //margin: 0, auto;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .nav_item {
@@ -46,4 +46,24 @@
 
 .link {
   color: #177dea;
+}
+
+@media only screen and (max-width: 800px) {
+  .headerContainer {
+    //padding: 1rem 0 2rem;
+    height: 170px;
+  }
+  .header {
+    max-width: 700px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .headerContainer {
+    //padding: 1rem 0 2rem;
+    height: 115px;
+  }
+  .header {
+    max-width: 320px;
+  }
 }
