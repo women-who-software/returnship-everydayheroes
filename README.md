@@ -8,39 +8,60 @@
   For the Everyday Heroes Dev Team
 </h1>
 
-Ensure your enviroment is set up by following this Gastby tutorial [here](https://www.gatsbyjs.org/tutorial/part-zero/).
+## 🚀 Start here
 
-## 🚀 Quick start
+1. **Ensure your enviroment is set up by following this Gastby tutorial [here](https://www.gatsbyjs.org/tutorial/part-zero/).**
 
-1. **Open Terminal**
+2. **Find a non assigned [issue](https://github.com/wwcodecolorado/returnship-everydayheroes/projects/1) which you want to work and self assign your name.**
 
-2. **Change the current working directory to the location where you want the cloned directory.**
+3. **Open Terminal. Change the current working directory to the location where you want the cloned directory.**
 
-3. **Clone this repo.**
+4. **Clone this repo.**
 
     Use the Git CLI to clone this repo to your local machine.
 
     ```shell
-    # clone the master branch/repo to your local machine and folder of choice , ex local-returnship
-    git clone https://github.com/wwcodecolorado/returnship-everydayheroes.git local-returnship
+    # clone the master branch/repo to your local machine and folder of choice 
+    git clone https://github.com/wwcodecolorado/returnship-everydayheroes.git 
+    
     ```
 
-4.  **Start developing.**
+5.  **Pull down the node modules**
+    ```shell
+    # pull down the needed npm modules to run the site
+    npm install 
+    ```
 
-    Navigate into your new site’s directory and start it up.
+6.  **Start up your local site.**
+
+    Navigate into the site’s directory and start it up.
 
     ```shell
-    cd local-returnship/
+    cd your-project-folder
     gatsby develop
     ```
+    
+7. **Before making any changes, create a branch in your name with issue number.** 
 
-5.  **Open the source code and start editing!**
+    ```shell
+    # create your own branch to work on ex. rafna or rafna-issue21
+    git branch [branch-name]
+    
+    ```
+
+8.  **Open the source code and start editing/ coding !**
 
     Your site is now running at `http://localhost:8000`!
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `local-returnship` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+9. **When making certain changes**
+
+  If you need to add a plug in or a another resource like a image you will need to stop running your site by going to your terminal and hitting control + c. Make sure your changes are saved and run "gatsby develop" again to see your changes in your local browser. 
+
+10. **Once you finish making changes, push your commit to your branch and do a pull request on master.**
+    
+11. **After reviewing, your changes will be merged to the master branch.** 
 
 ## 🧐 What's inside?
 
