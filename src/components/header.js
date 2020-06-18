@@ -10,12 +10,8 @@ const Header = () => {
     query HeaderQuery {
       file(relativePath: { eq: "overlay_logo.png" }) {
         childImageSharp {
-          fluid {
-            aspectRatio
-            base64
-            sizes
-            src
-            srcSet
+          fixed(width: 500) {
+            ...GatsbyImageSharpFixed_noBase64
           }
         }
       }
@@ -28,7 +24,8 @@ const Header = () => {
         <div className={headerStyles.leftContainer}>
           <Link className={headerStyles.title} to="/">
             <Img
-              fluid={data.file.childImageSharp.fluid}
+              loading="eager"
+              fixed={data.file.childImageSharp.fixed}
               alt=" Everyday Heroes, a covid19 Podcast with a Mask Icon"
             />
           </Link>
