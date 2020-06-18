@@ -25,7 +25,7 @@ const IndexPage = () => {
 
   return (
     <div>
-      <div className={IndexStyles.headerContainer}></div>
+      
       <Layout>
         <div className={IndexStyles.row}>
           <div className={IndexStyles.col_50}>

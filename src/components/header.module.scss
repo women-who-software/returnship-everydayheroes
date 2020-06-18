@@ -1,45 +1,51 @@
 .headerContainer {
-  //padding: 1rem 0 2rem;
+  padding: 1rem 3rem .5rem;
   position: fixed;
   z-index: 1;
-  width: 100vw;
+  width: 100%;
   background-image: linear-gradient(to right, #152fc1, #512f88);
   top: 0;
   left: 0;
-  height: 120px;
-}
-.header {
-  padding: 1rem 0 2rem;
-  max-width: 90%;
-  //margin: 0 auto;
-  margin-left: 50px;
+  max-width: 100%;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
 }
 
 .title {
-  //color: #fff;
-  //font-size: 3rem;
   text-decoration: none;
 }
 
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+
 .leftContainer {
-  margin-top: 10px;
-  margin-left: -20px;
+  margin: auto;
   width: 450px;
 }
 
 .rightContainer {
-  margin-top: -35px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 35px;
   max-width: 100%;
   display: flex;
   justify-content: right;
+  margin: auto;
+  align-self: flex-end; 
+
 }
 
 .nav_list {
   display: flex;
   align-items: center;
   list-style-type: none;
-  //margin: 0, auto;
-  margin-top: 10px;
+  margin: auto;
 }
 
 .nav_item {
@@ -62,59 +68,75 @@
   color: #177dea;
 }
 
-@media only screen and (max-width: 900px) {
-  .headerContainer {
-    //padding: 1rem 0 2rem;
-    height: 142px;
+// When max-width is max 750, such as Ipad then the nav bar will appear below the logo
+@media (max-width: 750px) {
+    .row {
+      flex-direction: column;
+    }
+    
   }
 
-  .leftContainer {
-    margin-top: 10px;
-    margin-left: -20px;
-    width: 450px;
+  // When max-width is max 550 then lets display the logo smaller at 300px
+@media (max-width: 550px) {
+    .leftContainer {
+        margin: auto;
+        width: 300px;
+      }
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+      }
+    
   }
 
-  .rightContainer {
-    margin-top: 0px;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-}
+// When max-width is max 410 then lets display the logo smaller and make nav bar fit in screen 
+@media (max-width: 410px) {
+    .leftContainer {
+        margin: auto;
+        width: 280px;
+      }
 
-@media only screen and (max-width: 500px) {
-  .headerContainer {
-    //padding: 1rem 0 2rem;
-    height: 110px;
-  }
-  .header {
-    max-width: 320px;
-  }
-  .leftContainer {
-    margin-top: 0px;
-    margin-left: -30px;
-    max-width: 100%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .headerContainer {
-    //padding: 1rem 0 2rem;
-    height: 115px;
-  }
-  .header {
-    max-width: 320px;
-  }
-  .leftContainer {
-    margin-top: 0px;
-    margin-left: -30px;
-    max-width: 100%;
+      .rightContainer {
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 100%;
+        display: flex;
+        justify-content: right;
+        margin: auto;
+        align-self: flex-end; 
+      
+      }
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+      }
+    
   }
 
-  .rightContainer {
-    margin-top: 0px;
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
+  // When max-width is max 320 ( smalled mobile devices) then lets display the logo smaller and make nav bar fit in screen 
+@media (max-width: 320px) {
+
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex-start;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        .leftContainer {
+            margin-left: -30px;
+            max-width: 100%;
+        }
+        
+        .rightContainer {
+            margin-left: -38px;
+            max-width: 100%;
+            display: flex;
+            
+        }
+    
   }
-}
