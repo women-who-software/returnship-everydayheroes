@@ -16,11 +16,8 @@
 }
 
 .content {
+  margin-top: 1rem;
   flex-grow: 1;
 }
 
-@media only screen and (max-width: 500px) {
-  .container {
-    margin-top: 110px;
-  }
-}
+

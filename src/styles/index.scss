@@ -9,7 +9,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #40ade7;
+  background-color:  #512f88;
   background-image: linear-gradient(#40ade7, #512f88);
 }
 
@@ -528,7 +528,7 @@ th {
   font-weight: bold;
 }
 li {
-  margin-bottom: calc(1.45rem / 2);
+  //margin-bottom: calc(1.45rem / 2);
 }
 ol li {
   padding-left: 0;

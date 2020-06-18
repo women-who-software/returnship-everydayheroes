@@ -20,7 +20,8 @@ const Header = () => {
 
   return (
     <header className={headerStyles.headerContainer}>
-      <div className={headerStyles.header}>
+
+        <div className={headerStyles.row}>
         <div className={headerStyles.leftContainer}>
           <Link className={headerStyles.title} to="/">
             <Img
