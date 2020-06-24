@@ -36,22 +36,22 @@ export default function StoryForm() {
     const handleChange = e => setState({ ...state, [e.target.name]: e.target.value })
 
     const onSubmit = (data,e) => {
-    // use this to test out form locally
-    //alert(JSON.stringify(data));
+      // use this to test out form locally
+      //alert(JSON.stringify(data));
 
-        //e.preventDefault();
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "share-your-story", ...state })
         })
-            .then(response => navigate("/success/")
-              //{
-                //setFeedbackMsg(`Thank you for submitting your everyday heroes story. We'll get back to you soon.`)
-                //reset()
-                //console.log(response)
-              //}
-            )
+            .then(response => {
+              
+              navigate("/success/")
+              setFeedbackMsg(`Thank you for submitting your everyday heroes story. We'll get back to you soon.`)
+              reset()
+              console.log(response)
+              
+            })
             .catch(error => {
             setFeedbackMsg("Oops, something went wrong. The form could not be submitted. Please try again or send us an email at cv19eh@gmail.com ")
             console.log(error)

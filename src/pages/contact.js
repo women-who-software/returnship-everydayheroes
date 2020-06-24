@@ -6,7 +6,7 @@ const ContactPage = () => {
     return (
         <div>
             <Layout>
-                <h1> Contact </h1>
+                <h2> Contact </h2>
                 <p> Reach us via email at cv19eh@gmail.com </p>
                 <p> Join our <a href="https://www.facebook.com/groups/covid19everydayheroes" >facebook group</a>!</p>
             </Layout>
