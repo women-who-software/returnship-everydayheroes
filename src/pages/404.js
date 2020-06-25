@@ -1,15 +1,15 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import Layout from '../components/layout'
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
+import Layout from '../components/layout'
 
-const SuccessPage = () => {
+const ErrorPage = () => {
 
     const data = useStaticQuery(graphql`
-    query successQuery {
-      file(relativePath: { eq: "tp.jpg" }) {
+    query errorQuery {
+      file(relativePath: { eq: "virus.jpg" }) {
         childImageSharp {
           fluid(grayscale: true, quality: 100, maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -19,17 +19,18 @@ const SuccessPage = () => {
     }
   `)
 
-
     return (
         <div>
+        
             <Layout>
-                <h2> Thank you </h2>
-                <h3>We'll get back to you soon. </h3>
-                <p> Click <Link to="/" > here</Link> to submit another story. </p>
+                <h2> 404: Page Not Found </h2>
+                <h3> Something went wrong!  </h3>
+                <p> The page you are looking for cannot be found. Click <Link to="/" > here</Link> go back home. </p>
                 <Img
                 fluid={data.file.childImageSharp.fluid}
-                alt=" Stacked toilet paper rolls"
+                alt=" A man in a face mask surrounded by Covid virus spores"
               />
+                
                 
             </Layout>
 
@@ -37,4 +38,4 @@ const SuccessPage = () => {
     )
 }
 
-export default SuccessPage 
+export default ErrorPage 
