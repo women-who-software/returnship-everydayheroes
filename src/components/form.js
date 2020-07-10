@@ -45,12 +45,12 @@ export default function StoryForm() {
             body: encode({ "form-name": "share-your-story", ...state })
         })
             .then(response => {
-              
+
               navigate("/success/")
               setFeedbackMsg(`Thank you for submitting your everyday heroes story. We'll get back to you soon.`)
               reset()
               console.log(response)
-              
+
             })
             .catch(error => {
             setFeedbackMsg("Oops, something went wrong. The form could not be submitted. Please try again or send us an email at cv19eh@gmail.com ")
