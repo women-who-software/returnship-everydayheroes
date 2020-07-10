@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { navigate } from "gatsby"
 import * as Yup from "yup";
-import formStyles from './form.module.scss'
+import formStyles from './contactform.module.scss'
 
 const ContactSchema = Yup.object().shape({
     name: Yup.string().required(' Please enter your full name'),
@@ -51,6 +51,7 @@ function ContactFormFn() {
   return (
     <div className={formStyles.row}>
       <div className={formStyles.flex_container}>
+
         <form onSubmit={handleSubmit(onSubmit)} method="post" data-netlify-honeypot="bot-field" data-netlify="true"
             name="contact" action="/success/">
           <input type="hidden" name="bot-field" aria-label= "Hidden botfield input" />
@@ -58,12 +59,14 @@ function ContactFormFn() {
           <h3>Contact Us</h3>
           {console.log(feedbackMsg)}
           <div className={formStyles.row}>
+          <div className={formStyles.col_50}>
             <div className="Fullname_area">
               <label htmlFor="name">Full Name</label>
               <input type="text" className={!JSON.stringify(formState.touched.name) && !errors.name ? ""
                     :JSON.stringify(formState.touched.name) && !errors.name ? "is-valid" :"is-invalid"} name="name" id="name"
                     placeholder="Enter your full name" onChange={handleChange} ref={register} aria-label="Enter your full name" />
               {errors.name && <p className={formStyles.error_text}>{errors.name.message}</p>}
+            </div>
             </div>
           </div>
           <div className="Email_area">
@@ -85,6 +88,7 @@ function ContactFormFn() {
             <input type="submit" value="Submit" className="special" aria-label= "submit your share story form" />
           </div>
         </form>
+
       </div>
     </div>
   );
