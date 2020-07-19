@@ -49,17 +49,19 @@ function ContactFormFn() {
         e.preventDefault();
 };
   return (
-    <div className={formStyles.row}>
+   
       <div className={formStyles.flex_container}>
 
         <form onSubmit={handleSubmit(onSubmit)} method="post" data-netlify-honeypot="bot-field" data-netlify="true"
             name="contact" action="/success/">
           <input type="hidden" name="bot-field" aria-label= "Hidden botfield input" />
           <input type="hidden" name="form-name" value="contact" aria-label= "Hidden form name " />
-          <h3>Contact Us</h3>
+
+          <h2>Contact Us</h2>
           {console.log(feedbackMsg)}
           <div className={formStyles.row}>
           <div className={formStyles.col_50}>
+
             <div className="Fullname_area">
               <label htmlFor="name">Full Name</label>
               <input type="text" className={!JSON.stringify(formState.touched.name) && !errors.name ? ""
@@ -90,7 +92,7 @@ function ContactFormFn() {
         </form>
 
       </div>
-    </div>
+  
   );
 }
 

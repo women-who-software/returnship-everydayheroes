@@ -25,7 +25,7 @@ const SuccessPage = () => {
             <Layout>
                 <h2> Thank you </h2>
                 <h3>We'll get back to you soon. </h3>
-                <p> Click <Link to="/" > here</Link> to submit another story. </p>
+                <p> Click <Link to="/"> here</Link> to go back to our home page. </p>
                 <Img
                 fluid={data.file.childImageSharp.fluid}
                 alt=" Stacked toilet paper rolls"

@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 const LandingPage = () =>{
     const data = useStaticQuery(graphql`
     query MyQuery {
-      file(relativePath: { eq: "blue_mask.jpg" }) {
+      file(relativePath: { eq: "Image_hat.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid
