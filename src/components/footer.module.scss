@@ -1,7 +1,28 @@
-.footer {
+footer {
     margin-top: 50px;
     font-size: 12px;
-    padding-top: 50px;
-    margin: auto;
+    padding-top: 50px;;
 }
 
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+img {
+    margin-bottom: 0 !important;
+    margin-left: 5px !important;
+    width: 12px;
+    height: 12px;
+}
