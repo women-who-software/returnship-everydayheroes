@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { useStaticQuery } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Video from "../components/video"
 
 
@@ -38,21 +38,21 @@ const PodcastPage = () => {
                                 <h4> {edge.node.frontmatter.date} </h4>
                                 <h5> {edge.node.frontmatter.authors}</h5>
                                 <p>{edge.node.frontmatter.text}</p>
-                                <Video videoSrcURL={edge.node.frontmatter.videoSourceURL} 
+                                <Video videoSrcURL={edge.node.frontmatter.videoSourceURL}
                                         videoTitle={edge.node.frontmatter.videoTitle} />
-                                        
+
                             </li>
                         )
                     })}
-                
-                
+
+
                 </ul>
-            
-                
+
+
             </Layout>
 
         </div>
     )
 }
 
-export default PodcastPage 
+export default PodcastPage
