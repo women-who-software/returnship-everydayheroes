@@ -1,13 +1,20 @@
 footer {
     margin-top: 50px;
-    font-size: 12px;
-    padding-top: 50px;;
+    padding-top: 50px;
+    color: white;
+    font-size: 14px;
+
 }
 
 .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+.center_foot {
+      display: flex;
+      justify-content: center;
+      align-self: center;
   }
 
 .left {
@@ -20,9 +27,22 @@ footer {
     justify-content: flex-end;
 }
 
-img {
+.img_sm_logo {
     margin-bottom: 0 !important;
     margin-left: 5px !important;
-    width: 12px;
-    height: 12px;
+    margin-right: 5px !important;
+    width: 25px;
+    height: 25px;
 }
+
+// When max-width is max 750, then footer options will stack :D
+@media (max-width: 750px) {
+    .row {
+      flex-direction: column-reverse;
+      margin-bottom: 5px !important;
+    }
+    .right{
+        margin-bottom: 7px;
+    }
+    
+  }

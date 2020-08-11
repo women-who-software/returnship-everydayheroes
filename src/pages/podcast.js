@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import { useStaticQuery, graphql } from 'gatsby'
 import Video from "../components/video"
+import PodcastList from '../components/podcast_list'
 
 
 const PodcastPage = () => {
@@ -48,10 +49,13 @@ const PodcastPage = () => {
 
                 </ul>
 
+                <PodcastList/>
+
 
             </Layout>
 
         </div>
+        
     )
 }
 

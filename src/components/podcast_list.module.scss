@@ -1,0 +1,80 @@
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem;
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #fff;
+  }
+  
+  .podcastGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+  }
+
+  .podcastGridItem {
+    background: white;
+    border: 1px solid #d0deff;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+      
+  }
+
+  .podcastGridItem:hover {
+    background: #40AAE5;
+    border: 1px solid #d0deff;
+    height: 100%;
+    width: 100%;
+      
+  }
+
+  .episodeCover{
+    border-radius: 10px;
+    background: white;
+    padding: 20px;
+  }
+
+  .episodeNumber{
+    background: #40AAE5;
+    color: white;
+    font-size: 16px;
+    padding: 2px 10px;
+    position: absolute;
+    top: -29px;
+
+  }
+
+  .episodeInfoTitle{
+    color: black;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: normal;
+    margin-left: .5rem;
+
+  }
+
+  .episodeGuestName{
+    color: #1355cb;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: .5rem;
+
+  }
+
+  .episodePublishedDate{
+    color: black;
+    font-weight: 300;
+    margin-left: .5rem;
+  }
+
+  .img_ep_cover{
+    margin-bottom: 0 ;
+
+  }
+  
+  
