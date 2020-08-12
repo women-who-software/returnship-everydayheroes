@@ -1,12 +1,13 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+    <img alt="Podcast logo" src="src/images/overlay_logo.png" width="900" style="background-image: linear-gradient(#40ade7, #512f88)"/>
   </a>
 </p>
 <h1 align="center">
   For the Everyday Heroes Dev Team
 </h1>
+
+
 
 ## 🚀 Start here
 
@@ -23,7 +24,6 @@
     ```shell
     # clone the master branch/repo to your local machine and folder of choice 
     git clone https://github.com/wwcodecolorado/returnship-everydayheroes.git 
-    
     ```
 
 5.  **Pull down the node modules**
@@ -32,9 +32,7 @@
     npm install 
     ```
 
-6.  **Start up your local site.**
-
-    Navigate into the site’s directory and start it up.
+6.  **Navigate into the site’s directory and start it up.**
 
     ```shell
     cd your-project-folder
@@ -45,8 +43,7 @@
 
     ```shell
     # create your own branch to work on ex. rafna or rafna-issue21
-    git branch [branch-name]
-    
+    git branch [your-feature-branch-name]
     ```
 
 8.  **Open the source code and start editing/ coding !**
@@ -57,20 +54,42 @@
 
 9. **When making certain changes**
 
-  If you need to add a plug in or a another resource like a image you will need to stop running your site by going to your terminal and hitting control + c. Make sure your changes are saved and run "gatsby develop" again to see your changes in your local browser. 
+    If you need to add a plug in or a another resource like a image you will need to stop running your site by going to your terminal and hitting control + c. Make sure your changes are saved and run "gatsby develop" again to see your changes in your local browser.
 
-10. **Once you finish making changes, push your commit to your branch and do a pull request on master.**
+10. **Updating your feature branch to latest master changes** 
 
-  (starting on your feature branch)
-  ```shell
-  $ git status 		                     # gives you a list of all the updated, added and deleted files.
-  $ git add . 		                     # adds all changes to stage for commit ,or use git add file_path 
-  $ git commit -m “commit message”		 # commits your code to your branch
-  $ git push                           # Uploads all local branch commits to GitHub
-  ```
-  Then go to Github and click the 'Create Pull Request' button and assign a reviewer. 
+    If you have your branch created for a while now, you may need to update it to what master has currently to avoid conflicts as you push/ commit your changes. You can skip this if you are just starting out.  
     
-11. **After reviewing, your changes will be merged to the master branch.** 
+    Follow [these](https://gist.github.com/santisbon/a1a60db1fb8eecd1beeacd986ae5d3ca) git commands or this summary:
+
+    ```shell
+    git checkout master
+    git fetch -p origin
+    git merge origin/master
+    git checkout [your-feature-branch-name]
+    git merge master
+    git push origin [your-feature-branch-name]
+    ```
+
+11. **Once you finish making changes, push your commit to your branch and do a pull request on master.**
+
+    (starting on your-feature-branch-name)
+    ```shell
+    # get a list of all the updated, added and deleted files.
+    git status 
+
+    # add changes to stage for commit ,or use git add file_path 		                     
+    git add . 	
+
+    # commit your code to your branch	                    
+    git commit -m “commit message”
+
+    # Upload all local branch commits to GitHub		 
+    git push                           
+    ```
+    Then go to Github and click the 'Create Pull Request' button and assign a reviewer. 
+    
+12. **After reviewing, your changes will be merged to the master branch.🎉 🎉 🎉** 
 
 ## 🧐 What's inside?
 
