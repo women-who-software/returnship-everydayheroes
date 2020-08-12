@@ -60,6 +60,15 @@
   If you need to add a plug in or a another resource like a image you will need to stop running your site by going to your terminal and hitting control + c. Make sure your changes are saved and run "gatsby develop" again to see your changes in your local browser. 
 
 10. **Once you finish making changes, push your commit to your branch and do a pull request on master.**
+
+  (starting on your feature branch)
+  ```shell
+  $ git status 		                     # gives you a list of all the updated, added and deleted files.
+  $ git add . 		                     # adds all changes to stage for commit ,or use git add file_path 
+  $ git commit -m “commit message”		 # commits your code to your branch
+  $ git push                           # Uploads all local branch commits to GitHub
+  ```
+  Then go to Github and click the 'Create Pull Request' button and assign a reviewer. 
     
 11. **After reviewing, your changes will be merged to the master branch.** 
 
