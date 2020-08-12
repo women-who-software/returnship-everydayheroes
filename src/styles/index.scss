@@ -278,7 +278,7 @@ h3 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 0.45rem;
+  margin-bottom: .45rem;
   color: inherit;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -488,7 +488,7 @@ iframe {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
 }
 hr {
   margin-left: 0;
@@ -528,17 +528,18 @@ th {
 
 ol li {
   padding-left: 0;
+  margin-bottom: 1rem;
 }
 ul li {
   padding-left: 0;
 }
 li > ol {
-  margin-left: 1.45rem;
+  margin-left: .45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
 li > ul {
-  margin-left: 1.45rem;
+  margin-left: 45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
@@ -634,6 +635,9 @@ pre tt:after {
 @media only screen and (max-width: 800px) {
   html {
     font-size: 100%;
+  }
+  iframe{
+    max-width: 100%;
   }
 }
 

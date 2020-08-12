@@ -29,13 +29,13 @@ const PodList = props => {
                         Title of the podcast
                         </h3>
                         <p>
-                            <span className={podcastListStyles.episodeGuestName}>
-                            Guest Name
-                            </span>
+                        <span className={podcastListStyles.episodeGuestName}>
+                        Guest Name
+                        </span>
                         </p>
                         <p>
-                            <span className={podcastListStyles.episodePublishedDate}>
-                            May 04, 2002
+                        <span className={podcastListStyles.episodePublishedDate}>
+                        May 04, 2002
                             </span>
                         </p>
                 </div>
