@@ -24,11 +24,14 @@ const Footer = () =>{
                     alt="facebook"
                 />
             </Link>
-               
+           
             </div>
             <div className={footerStyles.right, footerStyles.column}>
                 <a href="mailto:cv19eh@gmail.com">Contact Us</a>
             </div>
+            </div>
+            <div className={footerStyles.created}>
+                <a href="https://career-returnship.netlify.app/" target="_blank">Created by WWCode Boulder/Denver Career Returnship</a>
             </div>
         </footer>
     )
