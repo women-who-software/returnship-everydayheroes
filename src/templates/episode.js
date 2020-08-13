@@ -26,9 +26,10 @@ const Episode = (props) => {
     return(
         <Layout>
         
-            <h2>{props.data.markdownRemark.frontmatter.title}</h2>
+            <h2>{props.data.markdownRemark.frontmatter.videoTitle}</h2>
             <Video videoSrcURL={props.data.markdownRemark.frontmatter.videoSourceURL}
-                    videoTitle={props.data.markdownRemark.frontmatter.videoTitle} />
+                    videoTitle={props.data.markdownRemark.frontmatter.title} />
+                    <br></br>
             <h4> {props.data.markdownRemark.frontmatter.date} </h4>
             <h5> {props.data.markdownRemark.frontmatter.authors}</h5>
             <div dangerouslySetInnerHTML={{__html:props.data.markdownRemark.html}}></div>
