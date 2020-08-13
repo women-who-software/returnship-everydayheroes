@@ -1,4 +1,5 @@
-footer {
+.footerContainer {
+    width: 100%;
     margin-top: 50px;
     padding-top: 50px;
     color: white;
@@ -8,7 +9,7 @@ footer {
 
 .row {
     display: flex;
-    align-items: center;
+ 
     justify-content: space-between;
   }
 .center_foot {
@@ -17,14 +18,9 @@ footer {
       align-self: center;
   }
 
-.left {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.right {
-    display: flex;
-    justify-content: flex-end;
+.column {
+    width: 33%;
+    text-align: center;
 }
 
 .img_sm_logo {
@@ -46,3 +42,8 @@ footer {
     }
     
   }
+
+.created {
+    text-align: center;
+    padding-top: 0 !important;
+}
