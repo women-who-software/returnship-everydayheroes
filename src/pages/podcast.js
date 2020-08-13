@@ -1,57 +1,56 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { useStaticQuery, graphql } from 'gatsby'
-import Video from "../components/video"
+import { Link, useStaticQuery, graphql } from 'gatsby'
+//import Video from "../components/video"
+//import PodcastList from '../components/podcast_list'
 
 
 const PodcastPage = () => {
 
     const data = useStaticQuery (graphql`
-    query{
-        allMarkdownRemark{
-          edges{
-            node{
-              frontmatter{
-                videoTitle
-                date (formatString: "MMMM DD, YYYY")
-                videoSourceURL
-                authors
-                text
-                path
+      query{
+          allMarkdownRemark{
+            edges{
+              node{
+                frontmatter{
+                    videoTitle
+                    date (formatString: "MMMM DD, YYYY")
+                    videoSourceURL
+                    authors
+                    text
+                }
+                fields{
+                  slug
+                }
               }
-              html
             }
           }
         }
-      }
   `)
 
     return (
         <div>
             <Layout>
                 <h2> Podcast </h2>
-                <ul >
+                <ol>
                     {data.allMarkdownRemark.edges.map((edge) => {
                         return(
                             <li>
-                                <h3>{edge.node.frontmatter.videoTitle} </h3>
+                                <Link to={`/episode/${edge.node.fields.slug}`}>
+                                  <h3>{edge.node.frontmatter.videoTitle} </h3>
+                                </Link>
                                 <h4> {edge.node.frontmatter.date} </h4>
                                 <h5> {edge.node.frontmatter.authors}</h5>
-                                <p>{edge.node.frontmatter.text}</p>
-                                <Video videoSrcURL={edge.node.frontmatter.videoSourceURL}
-                                        videoTitle={edge.node.frontmatter.videoTitle} />
 
                             </li>
                         )
                     })}
-
-
-                </ul>
-
+                </ol>
 
             </Layout>
 
         </div>
+        
     )
 }
 
