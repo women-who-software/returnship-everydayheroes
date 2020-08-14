@@ -2,7 +2,7 @@
 path: "/episodes/trailer"
 date: "2020-07-13"
 title: "Everyday Heroes: A COVID-19 Podcast - Trailer"
-videoTitle: "Everyday Heroes: A COVID-19 Podcast - Season 1 Trailer"
+videoTitle: "Season 1 Episode 0: Trailer "
 authors: "Micheal Starks"
 slug: "trailer"
 videoSourceURL: "https://player.vimeo.com/video/436977653?app_id=122963"
