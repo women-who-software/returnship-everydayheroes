@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "gatsby"
 import TwitterImg from "../images/twitter_white.png"
 import FacebookImg from "../images/facebook_white.png"
 
@@ -11,17 +10,17 @@ const Footer = () =>{
             <div className={footerStyles.row}>
                 <div className={footerStyles.left}>© Everyday Heroes 2020</div>
                     <div className={footerStyles.center_foot}> Follow us 
-                    <Link to="https://www.twitter.com" target="_blank">
+                    <a href="https://www.twitter.com" >
                     <img className={footerStyles.img_sm_logo}
                         src={TwitterImg}
                         alt="twitter"/>
-                    </Link>
+                    </a>
 
-                    <Link to="https://www.facebook.com/groups/covid19everydayheroes" target="_blank">
+                    <a href="https://www.facebook.com/groups/covid19everydayheroes" >
                     <img className={footerStyles.img_sm_logo}
                         src={FacebookImg}
                         alt="facebook"/>
-                    </Link>
+                    </a>
                     
                     </div>
                 <div className={footerStyles.right}>
@@ -29,7 +28,7 @@ const Footer = () =>{
                 </div>
             </div>
             <div className={footerStyles.created}>
-                <a href="https://career-returnship.netlify.app/" target="_blank">Created by WWCode Boulder/Denver Career Returnship</a>
+                <a href="https://career-returnship.netlify.app/">Created by WWCode Boulder/Denver Career Returnship</a>
             </div>
         </footer>
     )

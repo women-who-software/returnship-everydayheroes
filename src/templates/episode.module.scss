@@ -1,0 +1,65 @@
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: auto;
+    white-space: pre-wrap;
+
+  }
+  
+  .leftContainer {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    margin: auto;
+    padding:0.45rem 1.45rem 0.45rem 1.45rem;
+    border: 1px solid #d0deff;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    margin: 1rem 0;
+    
+  }
+
+  .rightContainer {
+    margin: auto;
+    width: 500px;
+    padding:0.45rem 1.45rem 0.45rem 1.45rem;
+    border: 1px solid #d0deff;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    margin: 1rem 0;
+  }
+  
+  .flex_body_container {
+    max-width: 100%;
+    flex-direction: column;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: auto;
+    
+  }
+  
+  .h4{
+      max-width: 100%;
+
+  }
+
+  .h5{
+      max-width: 100%;
+  }
+
+  .iframe{
+      width: 100%,
+  }
+
+  /* Responsive layout - when the screen is less than 1035px wide, make the two columns stack on top of each other instead of next to each other */
+ @media (max-width: 1035px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+

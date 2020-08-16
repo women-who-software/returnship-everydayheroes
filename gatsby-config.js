@@ -7,6 +7,8 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+
+    
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -20,6 +22,16 @@ module.exports = {
       options: {
         name: 'src',
         path: `${__dirname}/src/`
+      },
+    },
+    {
+      resolve: `gatsby-source-buzzsprout-api`,
+      options: {
+        // You will need to generate an access token and get the podcast ID from your account
+        // https://github.com/Buzzsprout/buzsprout-api#authentication
+        name: `audio_BZ_data`,
+        token: process.env.BUZZSPROUT_TOKEN,
+        podcastId: '1186835',
       },
     },
     {
