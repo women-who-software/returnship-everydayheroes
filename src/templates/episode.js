@@ -43,7 +43,7 @@ const Episode = (props) => {
                         <div className={epiStyles.rightContainer}> 
                                 <AudioPlayer 
                                 autoPlay
-                                src="http://example.com/audio.mp3"
+                                src=""
                                 onPlay={e => console.log("onPlay")}
                                 showJumpControls={false}
                                 layout="horizontal-reverse" 
