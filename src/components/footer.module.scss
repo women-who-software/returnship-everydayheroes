@@ -1,21 +1,14 @@
 .footerContainer {
-    width: 100%;
+    max-width: 100%;
     margin-top: 50px;
     padding-top: 50px;
     color: white;
     font-size: 14px;
-
 }
 
 .row {
     display: flex;
- 
     justify-content: space-between;
-  }
-.center_foot {
-      display: flex;
-      justify-content: center;
-      align-self: center;
   }
 
 .column {
@@ -25,8 +18,7 @@
 
 .img_sm_logo {
     margin-bottom: 0 !important;
-    margin-left: 5px !important;
-    margin-right: 5px !important;
+    margin-left: 10px !important;
     width: 25px;
     height: 25px;
 }

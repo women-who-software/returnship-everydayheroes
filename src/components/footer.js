@@ -8,9 +8,11 @@ const Footer = () =>{
     return (
         <footer className={footerStyles.footerContainer}>  
             <div className={footerStyles.row}>
-                <div className={footerStyles.left}>© Everyday Heroes 2020</div>
-                    <div className={footerStyles.center_foot}> Follow us 
+
+                <div className={footerStyles.left_foot, footerStyles.column}>© Everyday Heroes 2020</div>
+                    <div className={footerStyles.center_foot, footerStyles.column}> Follow us 
                     <a href="https://www.twitter.com" >
+      
                     <img className={footerStyles.img_sm_logo}
                         src={TwitterImg}
                         alt="twitter"/>
@@ -23,7 +25,7 @@ const Footer = () =>{
                     </a>
                     
                     </div>
-                <div className={footerStyles.right}>
+                <div className={footerStyles.right_foot, footerStyles.column}>
                     <a href="mailto:cv19eh@gmail.com">Contact Us</a>
                 </div>
             </div>
