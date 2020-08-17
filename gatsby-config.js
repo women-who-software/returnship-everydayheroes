@@ -24,7 +24,7 @@ module.exports = {
         path: `${__dirname}/src/`
       },
     },
-    {
+    /*{
       resolve: `gatsby-source-buzzsprout-api`,
       options: {
         // You will need to generate an access token and get the podcast ID from your account
@@ -33,7 +33,7 @@ module.exports = {
         token: process.env.BUZZSPROUT_TOKEN,
         podcastId: '1186835',
       },
-    },
+    },*/
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

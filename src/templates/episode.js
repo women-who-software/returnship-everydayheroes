@@ -27,39 +27,40 @@ const Episode = (props) => {
     return(
         
         <Layout>
-            <div className={epiStyles.flex_body_container}>
-           
-
+            
             <h2>{props.data.markdownRemark.frontmatter.title}</h2>
 
-                <div className={epiStyles.row }>
+            <div className={epiStyles.flex_body_container}>
 
-                    <div className={epiStyles.leftContainer}>
+                
 
-                        <Video videoSrcURL={props.data.markdownRemark.frontmatter.videoSourceURL}
-                                title={props.data.markdownRemark.frontmatter.title} />
-                               
-                    </div>
+                        <div className={epiStyles.leftContainer}>
+                            <Video videoSrcURL={props.data.markdownRemark.frontmatter.videoSourceURL}
+                                    title={props.data.markdownRemark.frontmatter.title} />
+                        </div>
+                        
 
-                    <div className={epiStyles.rightContainer}> 
+                        <div className={epiStyles.rightContainer}> 
+                                <AudioPlayer 
+                                autoPlay
+                                src="http://example.com/audio.mp3"
+                                onPlay={e => console.log("onPlay")}
+                                showJumpControls={false}
+                                layout="horizontal-reverse" 
+                            />
 
-                            <AudioPlayer
-                            autoPlay
-                            src="http://example.com/audio.mp3"
-                            onPlay={e => console.log("onPlay")}
-                            // other props here
-                        />
-                                    
-                    </div>
+                        </div>
 
-                    
+                    <div className={epiStyles.row}>
                         <h3> Date Published: {props.data.markdownRemark.frontmatter.date} </h3>
-  
+                    </div>
+                    <div className={epiStyles.row}>
                         <h4 > Featured host & guest: {props.data.markdownRemark.frontmatter.authors}</h4>
+                    </div>
                         <div dangerouslySetInnerHTML={{__html:props.data.markdownRemark.html}}></div>
 
 
-                </div>
+                        
 
             
             </div>
