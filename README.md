@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-    <img alt="Podcast logo" src="src/images/overlay_logo.png" width="900" style="background-image: linear-gradient(#40ade7, #512f88)"/>
+    <img alt="Podcast logo" src="src/images/overlay_logo_color.png" width="900" style="background-image: linear-gradient(#40ade7, #512f88)"/>
   </a>
 </p>
 <h1 align="center">
@@ -84,7 +84,10 @@
     # commit your code to your branch	                    
     git commit -m “commit message”
 
-    # Upload all local branch commits to GitHub		 
+    # Upload all local branch commits to GitHub	and create upstream branch	 
+    git push -u origin [your-feature-branch-name]
+    
+    # or if your upstream branch already exists you can just do
     git push                           
     ```
     Then go to Github and click the 'Create Pull Request' button and assign a reviewer. 

@@ -1,36 +1,24 @@
-footer {
+.footerContainer {
+    max-width: 100%;
     margin-top: 50px;
     padding-top: 50px;
     color: white;
     font-size: 14px;
-
 }
 
 .row {
     display: flex;
-    align-items: center;
     justify-content: space-between;
   }
-.center_foot {
-      display: flex;
-      justify-content: center;
-      align-self: center;
-  }
 
-.left {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.right {
-    display: flex;
-    justify-content: flex-end;
+.column {
+    width: 33%;
+    text-align: center;
 }
 
 .img_sm_logo {
     margin-bottom: 0 !important;
-    margin-left: 5px !important;
-    margin-right: 5px !important;
+    margin-left: 10px !important;
     width: 25px;
     height: 25px;
 }
@@ -46,3 +34,8 @@ footer {
     }
     
   }
+
+.created {
+    text-align: center;
+    padding-top: 0 !important;
+}
