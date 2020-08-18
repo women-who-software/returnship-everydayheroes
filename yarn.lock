@@ -1094,7 +1094,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.5.5":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.5.5":
   version "7.11.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
   integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
@@ -1340,6 +1340,16 @@
   integrity sha512-tAag0jEcjwH+P2quUfipd7liWCNX2F8NvYjQp2wtInsZxnMlypdw0FtAOLxtvvkO+GSRRbmNi8m/5y42PQJYCQ==
   dependencies:
     "@hapi/hoek" "^8.3.0"
+
+"@iconify/icons-mdi@^1.0.46":
+  version "1.0.130"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-mdi/-/icons-mdi-1.0.130.tgz#f0c80f7835b973dd9f0b08e79ee57393acab18cb"
+  integrity sha512-EBfj/4r9PP7jaZ7y4NLyGBfYddCvVMxfrV79ZV39J3e5ek0HN8iqBYdVFCkmfwc5ALTN0I2uAWw/lePN6AvCkg==
+
+"@iconify/react@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@iconify/react/-/react-1.1.3.tgz#ebe4d3e5f5dea23cd6a9634acd7a0a25c7414a59"
+  integrity sha512-ReZNJyr89AfED6XZIXkhsJiNv2taT3j1cTo1HVPHMsrKOz6gAYdXtD2kDWF6+GVoFUxpmnO0fMcA6yCyTf6Tow==
 
 "@jest/types@^25.5.0":
   version "25.5.0"
@@ -6667,6 +6677,15 @@ gatsby-link@^2.4.2:
     "@types/reach__router" "^1.3.3"
     prop-types "^15.7.2"
 
+gatsby-node-helpers@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-node-helpers/-/gatsby-node-helpers-0.3.0.tgz#3bdca3b7902a702a5834fef280ad66d51099d57c"
+  integrity sha1-O9yjt5AqcCpYNP7ygK1m1RCZ1Xw=
+  dependencies:
+    json-stringify-safe "^5.0.1"
+    lodash "^4.17.4"
+    p-is-promise "^1.1.0"
+
 gatsby-page-utils@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-0.2.3.tgz#b632c40ad84a3c7c306dcb61b027a8c8ec49fffa"
@@ -6925,6 +6944,22 @@ gatsby-remark-embed-video@^3.0.10:
     get-video-id "^3.1.4"
     remark-burger "^1.0.1"
     unist-util-visit "^2.0.2"
+
+gatsby-source-buzzsprout-api@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-source-buzzsprout-api/-/gatsby-source-buzzsprout-api-1.0.3.tgz#6eb59c6f6b042e2d8b8b5c845300b2246681e486"
+  integrity sha512-C0eEh53PdYpNe0+gOzImp3RZTcRyoJDYVqJh7GwjYH8umGdxwBxEYakcC0MpQDtQ8Da/o4oVD7EovSsMz9rrmw==
+  dependencies:
+    node-fetch "2.6.0"
+
+gatsby-source-buzzsprout@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-buzzsprout/-/gatsby-source-buzzsprout-0.3.1.tgz#02fbea5861a41f9f2088517787a6832704aaefd3"
+  integrity sha512-JqtE9HbAAEaeyTpJMcJElaF3Dj+AgK2wppLDQyvMmvH9IL/jFvDmH4UhJBOYt+RHMCORv6j6Wo92kBk5hEE7iA==
+  dependencies:
+    "@babel/runtime" "^7.8.4"
+    gatsby-node-helpers "^0.3.0"
+    node-fetch "^2.6.0"
 
 gatsby-source-filesystem@^2.3.11:
   version "2.3.14"
@@ -12172,6 +12207,15 @@ react-focus-lock@^2.3.1:
     react-clientside-effect "^1.2.2"
     use-callback-ref "^1.2.1"
     use-sidecar "^1.0.1"
+
+react-h5-audio-player@^3.3.0:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/react-h5-audio-player/-/react-h5-audio-player-3.3.2.tgz#747c1591785ef08952a015f6f77a5787479fec45"
+  integrity sha512-1zvbQ8AcNYI+w14DlK+Mzm2NQi/eOeYEUsq65iglybPBgo3yZ7ZTaGp4DEXFPdxbdSPUWUWZOwKmpP2maLT7dQ==
+  dependencies:
+    "@babel/runtime" "^7.10.2"
+    "@iconify/icons-mdi" "^1.0.46"
+    "@iconify/react" "^1.1.3"
 
 react-hook-form@^5.7.2:
   version "5.7.2"
