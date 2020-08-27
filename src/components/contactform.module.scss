@@ -171,7 +171,7 @@
    flex-wrap: wrap;
    margin: auto ;
    float: left;
-   width: 500px;;
+   width: 500px;
  }
 
 /* .col_25 {
@@ -190,12 +190,10 @@
 } */
 
 .flex_container {
-   background-color: transparent;
-   padding: 20px 20px 15px 20px;
-   //border: 1px solid lightgrey;
-   border-radius: 3px;
+   //background-color: transparent;
+   padding-left: 15px;
+   //border-radius: 3px;
    margin: auto;
-   //width: 500px;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction ) */
@@ -205,3 +203,17 @@
    }
 
  }
+
+ @media (max-width: 570px) {
+  .row {
+    width: 340px;
+  }
+
+}
+
+@media (max-width: 430px) {
+  .row {
+    width: 250px;
+  }
+
+}

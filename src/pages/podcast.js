@@ -1,23 +1,69 @@
 import React from 'react'
-
 import Layout from '../components/layout'
+import { Link, useStaticQuery, graphql } from 'gatsby'
+import podcastStyles from './podcast.module.scss'
+import podcastCover from "../images/eh__cover.png"
+//import playButton from "../images/play_white.png"
 
 const PodcastPage = () => {
+
+    const data = useStaticQuery (graphql`
+      query{
+          allMarkdownRemark{
+            edges{
+              node{
+                frontmatter{
+                    title
+                    date (formatString: "MMMM DD, YYYY")
+                    videoSourceURL
+                    authors
+                }
+                fields{
+                  slug
+                }
+              }
+            }
+          }
+        }
+  `)
+
     return (
         <div>
             <Layout>
                 <h2> Podcast </h2>
-                <h3> This feature is still under development.</h3>
-                <p> Check back again soon.</p>
-                {/*<h3> Episode 1</h3>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores </p>
-                <h3> Episode 2</h3>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores </p>*/}
+
+                <div className={podcastStyles.container}>
                 
+
+                  <ol className={podcastStyles.podcasts}>
+                    {data.allMarkdownRemark.edges.map((edge) => {
+                        return(
+
+                          <Link to={`/episode/${edge.node.fields.slug}`}>
+                            <li className={podcastStyles.podcast}>
+                              <div className={podcastStyles.episodeCover}> 
+                                <img className={podcastStyles.img_ep_cover}
+                                  src={podcastCover}
+                                  alt="podcast episode cover"></img>   
+                              </div>
+                                
+                                <h3>{edge.node.frontmatter.title} </h3>
+                                <h4> {edge.node.frontmatter.date} </h4>
+                                <h5> {edge.node.frontmatter.authors}</h5>
+                              
+                            </li></Link>
+
+                        )
+                    })}
+                  </ol>
+
+                </div>
+
             </Layout>
 
         </div>
+        
     )
 }
 
-export default PodcastPage 
+export default PodcastPage

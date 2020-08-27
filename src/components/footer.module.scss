@@ -1,7 +1,41 @@
-.footer {
+.footerContainer {
+    max-width: 100%;
     margin-top: 50px;
-    font-size: 12px;
     padding-top: 50px;
-    margin: auto;
+    color: white;
+    font-size: 14px;
 }
 
+.row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.column {
+    width: 33%;
+    text-align: center;
+}
+
+.img_sm_logo {
+    margin-bottom: 0 !important;
+    margin-left: 10px !important;
+    width: 25px;
+    height: 25px;
+}
+
+// When max-width is max 750, then footer options will stack :D
+@media (max-width: 750px) {
+    .row {
+      flex-direction: column-reverse;
+      margin-bottom: 5px !important;
+    }
+    .right{
+        margin-bottom: 7px;
+    }
+    
+  }
+
+.created {
+    text-align: center;
+    padding-top: 0 !important;
+}

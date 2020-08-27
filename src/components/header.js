@@ -1,22 +1,23 @@
 import React from "react"
 import { Link } from "gatsby"
-import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
+//import Img from "gatsby-image"
+//import { useStaticQuery, graphql } from "gatsby"
+import podcastLogo from "../images/overlay_logo.png"
 
 import headerStyles from "./header.module.scss"
 
 const Header = () => {
-  const data = useStaticQuery(graphql`
+  /*const data = useStaticQuery(graphql`
     query HeaderQuery {
       file(relativePath: { eq: "overlay_logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid( maxWidth: 500) {
             ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
     }
-  `)
+  `)*/
 
   return (
     <header className={headerStyles.headerContainer}>
@@ -24,10 +25,8 @@ const Header = () => {
         <div className={headerStyles.row}>
         <div className={headerStyles.leftContainer}>
           <Link className={headerStyles.title} to="/">
-            <Img
-              loading="eager"
-              fluid={data.file.childImageSharp.fluid}
-              alt=" Everyday Heroes, a covid19 Podcast with a Mask Icon"
+            <img src ={podcastLogo}
+              alt=" Everyday Heroes, a covid19 Podcast with a Mask Logo"
             />
           </Link>
         </div>
