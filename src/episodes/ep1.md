@@ -4,7 +4,7 @@ title: "Season 1 Episode 1: Ryan Seamy"
 authors: "Angela Rothermel, Ryan Seamy"
 slug: "ep1"
 videoSourceURL: "https://player.vimeo.com/video/430343600?app_id=122963"
-audioSourceURL:
+audioSourceURL: "https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3"
 
 ---
 

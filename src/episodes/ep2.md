@@ -4,6 +4,7 @@ title: "Season 1 Episode 2: Marla Kalin"
 authors: "Angela Rothermel, Marla Kalin"
 slug: "ep2"
 videoSourceURL: "https://player.vimeo.com/video/436276626?app_id=122963"
+audioSourceURL: https://www.buzzsprout.com/1186835/4483412-episode-2-marla-kalin.mp3
 ---
 
 In Episode #2 of Everyday Heroes: A COVID-19 Podcast, we meet Marla Kalin, Director of a Memory Care Unit in Colorado. She talks about how things have changed for the residents during the COVID-19 pandemic.
