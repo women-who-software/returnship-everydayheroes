@@ -6,6 +6,8 @@ import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 import epiStyles from './episode.module.scss'
 
+
+
 export const query= graphql`
         query ($slug:String!){
             markdownRemark(
@@ -14,7 +16,9 @@ export const query= graphql`
                 title
                 date (formatString: "MMMM DD, YYYY")
                 videoSourceURL
+                audioSourceURL
                 authors
+                
             }
             html
         }
@@ -23,6 +27,9 @@ export const query= graphql`
 
 
 const Episode = (props) => {
+
+    //let post = props.markdownRemark;
+    //let guestImage = post.frontmatter.guestImage.childImageSharp.fluid;
 
     return(
         
@@ -41,13 +48,14 @@ const Episode = (props) => {
                         
 
                         <div className={epiStyles.rightContainer}> 
-                                <AudioPlayer 
-                                autoPlay
-                                src=""
+                                <div className={epiStyles.AudioPlayer}><AudioPlayer 
+                                autoPlay={false}
+                                src={props.data.markdownRemark.frontmatter.audioSourceURL}
                                 onPlay={e => console.log("onPlay")}
                                 showJumpControls={false}
-                                layout="horizontal-reverse" 
-                            />
+                                customAdditionalControls={[]}
+                                
+                            /></div>
 
                         </div>
 
