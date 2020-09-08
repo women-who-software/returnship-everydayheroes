@@ -22,4 +22,5 @@ collections:
       # - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Guest Photo, name: "guest_photo", widget: "image"}
       - {label: "Vimeo Video Episode number ex: 430343600 ", name: "vim_ep_num", widget: "string"}
+      #- {label: "Buzzsprout"}
       - {label: "Body", name: "body", widget: "markdown"}
