@@ -86,7 +86,7 @@ module.exports = {
           },
     },
 
-    /*`gatsby-plugin-netlify-cms`,*/
+    `gatsby-plugin-netlify-cms`,
 
         {
           resolve: `gatsby-source-buzzsprout-api`,
