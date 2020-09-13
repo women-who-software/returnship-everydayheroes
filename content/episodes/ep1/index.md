@@ -1,8 +1,8 @@
 ---
 date: "2020-07-20"
 title: "Season 1 Episode 1: Ryan Seamy"
-authors: "Angela Rothermel, Ryan Seamy"
 guestName: "Ryan Seamy"
+guestPhoto: "{slug}/RyanSeamy.jpg"
 slug: "ep1"
 vim_ep_num: '430343600'
 buz_ep_num: '4343081'
