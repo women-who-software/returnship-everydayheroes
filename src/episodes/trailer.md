@@ -1,7 +1,7 @@
 ---
 date: "2020-07-13"
 title: "Season 1 Episode 0: Trailer "
-authors: "Micheal Starks"
+guestName: "Micheal Starks"
 slug: "trailer"
 videoSourceURL: "https://player.vimeo.com/video/436977653?app_id=122963"
 audioSourceURL: "https://www.buzzsprout.com/1186835/4510406-trailer.mp3"

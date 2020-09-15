@@ -3,6 +3,7 @@ date: "2020-08-10"
 title: "Season 1 Episode 4: Roger Lopez "
 authors: "Angela Rothermel, Roger Lopez"
 slug: "ep4"
+guestName: "Roger Lopez"
 videoSourceURL: "https://player.vimeo.com/video/445965445?app_id=122963"
 audioSourceURL: "https://www.buzzsprout.com/1186835/4912976-episode-4-roger-lopez.mp3"
 ---

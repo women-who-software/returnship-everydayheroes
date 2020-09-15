@@ -3,6 +3,7 @@ date: "2020-07-27"
 title: "Season 1 Episode 2: Marla Kalin"
 authors: "Angela Rothermel, Marla Kalin"
 slug: "ep2"
+guestName: "Marla Kalin"
 videoSourceURL: "https://player.vimeo.com/video/436276626?app_id=122963"
 audioSourceURL: https://www.buzzsprout.com/1186835/4483412-episode-2-marla-kalin.mp3
 ---

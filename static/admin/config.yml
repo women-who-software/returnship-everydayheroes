@@ -9,12 +9,12 @@ public_folder: "/img" # The src attribute for uploaded media will begin with /im
 collections:
   - name: "episode" # Used in routes, e.g., /admin/collections/blog
     label: "Episode" # Used in the UI
-    folder: "content/episodes" # The path to the folder where the documents are stored
+    folder: "src/episodes" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "index" # Filename template
+    slug: 'ep{{episodeNumber}}'  # Filename template
     media_folder: ''
     public_folder: ''
-    path: '{{slug}}/index'
+    path: '{{slug}}/index' 
     editor:
       preview: false
     fields: # The fields for each document, usually in front matter
@@ -23,8 +23,11 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Guest Name ex: 'Ryan Seamy'", name: "guestName", widget: "string"}
       - {label: "Guest Photo", name: "guestPhoto", widget: "image"}
-      - {label: "Slug ex: 'ep1'", name: "slug", widget: "string"}
+      - {label: "Guest Biography", name: "guestBio", widget: "markdown"}
+      - {label: "Episode Number ex: '1'", name: "episodeNumber", widget: "string"}
+      # Grab Vimeo ep num from client to build videoSourceURL: "https://player.vimeo.com/video/430343600?app_id=122963"
       - {label: "Vimeo video episode number (found in the vimeo url) ex: '430343600'  ", name: "vim_ep_num", widget: "string"}
+      # Grab Buzzsprout ep num from audioSourceURL: "https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3"
       - {label: "Buzzsprout audio episode number (found in the buzzsprout url) ex: '4343081' ", name: "buz_ep_num", widget: "string"}
       - {label: "Show Notes (copied from buzzsprout page)", name: "shownotes", widget: "markdown"}
       - {label: "Podcast Transcript (copied from buzzsprout page)", name: "transcript", widget: "markdown"}

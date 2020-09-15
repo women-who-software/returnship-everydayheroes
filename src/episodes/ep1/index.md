@@ -9,9 +9,11 @@ buz_ep_num: '4343081'
 videoSourceURL: "https://player.vimeo.com/video/430343600?app_id=122963"
 audioSourceURL: "https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3"
 guestBio: "Extensive markdown guest bio infomation will be entered in this spot "
-shownotes: "In this episode, our host Angela Rothermel interviews Ryan Seamy, an actor, producer, and blood donor. He talks about his experience during the early days of the COVID-19 pandemic. Credits: EVERYDAY HEROES: A COVID-19 Podcast. Featuring Angela Rothermel and Ryan Seamy. Produced by Michael T. Starks. Editing Services by Brian Torres, Irlend Productions Independent, LLC. All Images and Footage used with Permission & Licensing, Provided by Adobe Stock and Pixabay.com. Newsroom One Footage provided by Ryan Seamy. "Say a Prayer for the Living" Music, Lyrics & Performed by Michael T. Starks. Special Thanks to Karilyn T. Starks. Ionogen Media, LLC Copyright 2020. All Rights Reserved."
+shownotes: ""
 
 ---
+
+In this episode, our host Angela Rothermel interviews Ryan Seamy, an actor, producer, and blood donor. He talks about his experience during the early days of the COVID-19 pandemic. Credits: EVERYDAY HEROES: A COVID-19 Podcast. Featuring Angela Rothermel and Ryan Seamy. Produced by Michael T. Starks. Editing Services by Brian Torres, Irlend Productions Independent, LLC. All Images and Footage used with Permission & Licensing, Provided by Adobe Stock and Pixabay.com. Newsroom One Footage provided by Ryan Seamy. "Say a Prayer for the Living" Music, Lyrics & Performed by Michael T. Starks. Special Thanks to Karilyn T. Starks. Ionogen Media, LLC Copyright 2020. All Rights Reserved.
 Transcript of Episode 1: Ryan Seamy
 
 “Memories heal the living. We pray for the living.”
