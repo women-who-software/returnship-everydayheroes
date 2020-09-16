@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import podcastStyles from './podcast.module.scss'
 import podcastCover from "../images/eh__cover.png"
-import playButton from "../images/play_white.png"
+//import playButton from "../images/play_white.png"
 
 const PodcastPage = () => {
 
@@ -13,11 +13,10 @@ const PodcastPage = () => {
             edges{
               node{
                 frontmatter{
-                    videoTitle
+                    title
                     date (formatString: "MMMM DD, YYYY")
                     videoSourceURL
                     authors
-                    text
                 }
                 fields{
                   slug
@@ -48,8 +47,7 @@ const PodcastPage = () => {
                                   alt="podcast episode cover"></img>   
                               </div>
                                 
-                                <h3>{edge.node.frontmatter.videoTitle} </h3>
-                                
+                                <h3>{edge.node.frontmatter.title} </h3>
                                 <h4> {edge.node.frontmatter.date} </h4>
                                 <h5> {edge.node.frontmatter.authors}</h5>
                               
