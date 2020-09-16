@@ -23,7 +23,7 @@ const PodcastPage = ({data}) => {
                             <li className={podcastStyles.podcast}>
                               <div className={podcastStyles.episodeCover}> 
                                 <img className={podcastStyles.img_ep_cover}
-                                  src={podcastCover}
+                                  src={`src/episodes/ep${edge.node.frontmatter.episodeNumber}/${edge.node.frontmatter.guestPhoto}`}
                                   alt="podcast episode cover"></img>   
                               </div>
                                 
@@ -58,6 +58,7 @@ query{
               date (formatString: "MMMM DD, YYYY")
               guestName
               guestPhoto
+              episodeNumber
              
           }
           fields{
