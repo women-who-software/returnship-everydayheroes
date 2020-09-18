@@ -7,7 +7,7 @@ guestPhoto: dom_photo-3-.png
 guestBio: This is Dom I am creating an example episode entry.
 episodeNumber: "14"
 vim_ep_num: "430343600"
-buz_ep_num: "4343081"
+buz_ep_url: "https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3"
 shownotes: In this episode, our host Angela Rothermel interviews Dominika Wilk.
 transcript: >-
   “Memories heal the living. We pray for the living.”

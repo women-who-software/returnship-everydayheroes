@@ -14,7 +14,7 @@ guestBio: "**Lorem Ipsum** is simply dummy text of the printing and typesetting
   PageMaker including versions of Lorem Ipsum."
 episodeNumber: "15"
 vim_ep_num: "430343600"
-buz_ep_num: "4343081"
+buz_ep_url: "https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3"
 shownotes: Show notes **Lorem Ipsum** is simply dummy text of the printing and
   typesetting industry. Lorem Ipsum has been the industry's standard dummy text
   ever since the 1500s, when an unknown printer took a galley of type and
