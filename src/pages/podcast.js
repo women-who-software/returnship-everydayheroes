@@ -23,8 +23,11 @@ const PodcastPage = ({data}) => {
                             <li className={podcastStyles.podcast}>
                               <div className={podcastStyles.episodeCover}> 
                                 <img className={podcastStyles.img_ep_cover}
-                                  src={`src/episodes/ep${edge.node.frontmatter.episodeNumber}/${edge.node.frontmatter.guestPhoto}`}
-                                  alt="podcast episode cover"></img>   
+                                  // Trying to pull in each picture of the guest from each of the relative path from Episodes folder 
+                                  // but its not working
+                                  //src={`../episodes/ep${edge.node.frontmatter.episodeNumber}/${edge.node.frontmatter.guestPhoto}`}
+                                  src={podcastCover}
+                                  alt="podcast episode cover" ></img>   
                               </div>
                                 
                                 <h3>{edge.node.frontmatter.title} </h3>
@@ -57,7 +60,11 @@ query{
               title
               date (formatString: "MMMM DD, YYYY")
               guestName
-              guestPhoto
+              guestPhoto{
+                relativePath
+                absolutePath
+                extension
+              }
               episodeNumber
              
           }

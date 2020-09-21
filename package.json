@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "everyday-heroes-a-covid-19-podcast-website",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "We're creating a podcast that features Everyday Heroes who are willing to tell their stories and to share the impact they've made during the COVID-19 pandemic.",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -35,6 +35,7 @@
     "react-dom": "^16.12.0",
     "react-h5-audio-player": "^3.3.0",
     "react-hook-form": "^5.7.2",
+    "remark-html": "^12.0.0",
     "yup": "^0.29.1"
   },
   "devDependencies": {
@@ -43,9 +44,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/wwcodecolorado/returnship-everydayheroes"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/wwcodecolorado/returnship-everydayheroes/issues"
   }
 }

@@ -2,8 +2,10 @@ backend:
   name: git-gateway
   #branch: master # Branch to update (optional; defaults to master)
 
-# when using the default proxy server port
-local_backend: true
+# when using the local proxy server port (for debugging on local build set to 'true')
+# open another Terminal instance and excute this command to get it running:
+# npx netlify-cms-proxy-server
+local_backend: false
 
 # These lines should *not* be indented
 media_folder: "static/img" # Media files will be stored in the repo under static/img
@@ -17,7 +19,7 @@ collections:
     slug: 'ep{{episodeNumber}}'  # Filename template
     media_folder: ''
     public_folder: ''
-    path: '{{slug}}/index' 
+    path: '{{slug}}/{{slug}}' 
     editor:
       preview: false
     fields: # The fields for each document, usually in front matter
@@ -26,11 +28,12 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Guest Name ex: 'Ryan Seamy'", name: "guestName", widget: "string"}
       - {label: "Guest Photo", name: "guestPhoto", widget: "image"}
-      - {label: "Guest Biography", name: "guestBio", widget: "markdown"}
+      - {label: "Guest Biography", name: "guestBio", widget: "text"}
       - {label: "Episode Number ex: '1'", name: "episodeNumber", widget: "string"}
+      - {label: "Slug (please follow format of ep and episode number ex: 'ep1'", name: "slug", widget: "string" }
       # Grab Vimeo ep num from client to build videoSourceURL: "https://player.vimeo.com/video/430343600?app_id=122963"
       - {label: "Vimeo video episode number (found in the vimeo url) ex: '430343600'  ", name: "vim_ep_num", widget: "string"}
       # Grab Buzzsprout ep num from audioSourceURL: "https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3"
       - {label: "Buzzsprout audio episode url (copy the buzzsprout url and add '.mp3') ex: 'https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3' ", name: "buz_ep_url", widget: "string"}
       - {label: "Show Notes (copied from buzzsprout page)", name: "shownotes", widget: "markdown"}
-      - {label: "Podcast Transcript (copied from buzzsprout page)", name: "transcript", widget: "markdown"}
+      - {label: "Podcast Transcript (copied from buzzsprout page)", name: "body", widget: "markdown"}

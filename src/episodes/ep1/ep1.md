@@ -2,14 +2,13 @@
 date: "2020-07-20"
 title: "Season 1 Episode 1: Ryan Seamy"
 guestName: "Ryan Seamy"
-guestPhoto: "{slug}/RyanSeamy.jpg"
+guestPhoto: "RyanSeamy.jpg"
 episodeNumber: '1'
 vim_ep_num: '430343600'
-buz_ep_num: '4343081'
-videoSourceURL: "https://player.vimeo.com/video/430343600?app_id=122963"
-audioSourceURL: "https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3"
+buz_ep_url: "https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3"
 guestBio: "Extensive markdown guest bio infomation will be entered in this spot "
 shownotes: ""
+slug: "ep1"
 
 ---
 
