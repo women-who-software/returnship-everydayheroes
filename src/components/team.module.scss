@@ -1,0 +1,30 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1rem;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  min-height: 50vh;
+  color: #fff;
+}
+
+h3 {
+  text-align:center;
+}
+
+.leftContainer {
+  -ms-flex: 50%; /* IE10 */
+  flex: 30%;
+  margin: auto;
+  padding:0.45rem 1.45rem 0.45rem 1.45rem;
+  width: 100px;
+  height: 120vh;
+}
+
+.rightContainer {
+  margin: auto;
+  width: 1200px;
+  height: 100vh;
+  padding:0.45rem 1.45rem 0.45rem 1.45rem;
+}
