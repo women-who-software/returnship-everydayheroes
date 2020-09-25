@@ -13,12 +13,12 @@ guestBio: Born and raised in Colorado, Tanya Muftic (featured in Episode 6) has
   her blessings. She hopes she can once again work in the classroom providing
   stability and emotional support for her students.
 episodeNumber: "6"
+slug: ep6
 vim_ep_num: "450828109"
 buz_ep_url: https://www.buzzsprout.com/1186835/5110822-episode-6-tanya-muftic.mp3
-shownotes: >-
-  In Episode #6 of Everyday Heroes: A COVID-19 Podcast, we meet Tanya Muftic, a
-  Montessori teacher and LGBTQ activist. She talks about losing her job and
-  making all students feel welcome in her classroom.
+shownotes: "In Episode #6 of Everyday Heroes: A COVID-19 Podcast, we meet Tanya
+  Muftic, a Montessori teacher and LGBTQ activist. She talks about losing her
+  job and making all students feel welcome in her classroom."
 ---
 “Memories heal the living. We pray for the living.”
 
