@@ -8,8 +8,9 @@ backend:
 local_backend: false
 
 # These lines should *not* be indented
-media_folder: "static/img" # Media files will be stored in the repo under static/img
-public_folder: "/img" # The src attribute for uploaded media will begin with /img
+media_folder: "src/episodes" # Media files will be stored in the repo under static/img
+public_folder: "/episodes" # The src attribute for uploaded media will begin with /img
+media_folder_relative: true
 
 collections:
   - name: "episode" # Used in routes, e.g., /admin/collections/blog
@@ -20,8 +21,9 @@ collections:
     media_folder: ''
     public_folder: ''
     path: '{{slug}}/{{slug}}' 
+    preview_path: 'episodes/{{slug}}' 
     editor:
-      preview: false
+      preview: true
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "episode"}
       - {label: "Title of the episode ex: 'Season 1 Episode 1: Ryan Seamy'", name: "title", widget: "string"}

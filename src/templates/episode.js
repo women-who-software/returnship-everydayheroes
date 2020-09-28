@@ -5,8 +5,8 @@ import Video from "../components/video"
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 import epiStyles from './episode.module.scss'
-import remark from 'remark'
-import remarkHTML from 'remark-html'
+//import remark from 'remark'
+//import remarkHTML from 'remark-html'
 
 export const query= graphql`
         query ($slug:String!){
@@ -32,30 +32,23 @@ export const query= graphql`
         } 
     } 
 `
-const toHTML = value => remark()
-                            .use(remarkHTML)
-                            .processSync(value)
-                            .toString()
 
 const Episode = (props) => {
-
-    //const asMarkdown = props.getIn(['data', 'something']) 
-    //const asHTML = toHTML(asMarkdown)
 
      //Build each episodes Vimeo path with vim_ep_num data from markdown
     // format needed to build: "https://player.vimeo.com/video/430343600?app_id=122963"
     let vimeoURL = props.data.markdownRemark.frontmatter.vim_ep_num;
     let fullVideoURLBuilder = `https://player.vimeo.com/video/${vimeoURL}?app_id=122963`;
-    let episodeNum = props.data.markdownRemark.frontmatter.episodeNumber;
-    let guestPhotoTitle = props.data.markdownRemark.frontmatter.guestPhoto;
+    //let episodeNum = props.data.markdownRemark.frontmatter.episodeNumber;
+    //let guestPhotoTitle = props.data.markdownRemark.frontmatter.guestPhoto;
     let imagePath = props.data.markdownRemark.frontmatter.guestPhoto.relativePath;
     let imageURL = `../${imagePath}`
     
 
-    console.log(imagePath);
-    console.log(episodeNum);
-    console.log(guestPhotoTitle);
-    console.log(imageURL);
+    //console.log(imagePath);
+    //console.log(episodeNum);
+    //console.log(guestPhotoTitle);
+    //console.log(imageURL);
   
 
 
