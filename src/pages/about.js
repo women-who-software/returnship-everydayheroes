@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import Meet from '../components/team'
 
 const AboutPage = () => {
     return (
@@ -27,6 +28,7 @@ const AboutPage = () => {
                  <br /><br />
                 We're making this podcast available for free in streaming video and as an audio download. Enjoy!</p>
 
+                <Meet />
             </Layout>
 
         </div>
