@@ -21,49 +21,30 @@ episodeNumber: "8"
 slug: ep8
 vim_ep_num: "455299588"
 buz_ep_url: https://www.buzzsprout.com/1186835/5320147-episode-8-lana-isaacson.mp3
-shownotes: >-
-  In Episode #8 of Everyday Heroes: A COVID-19 Podcast, we meet Lana Isaacson.
-  She is a couples and family therapist who encourages her clients to be
-  "relationship heroes".
-
-
-  ### 24-7 Support for Everyone and Affordable Therapy!
-
-
-
-  Lana Isaacson, LCSW, CAC III, is offering a 20% off rate on packages of 5 sessions
-
-  and for clients struggling financially 25% off packages. She also recommends the
-
-  interactive online relationship workshop, \[Hold Me Tight](https://holdmetightonline.com/). Here are additional resources
-
-  that may be helpful during this time.
-
-
-
-  #### 24-7 Hotlines: 
-
-
-
-  ● Colorado Crisis Support Line 1.844.493.TALK (8255)
-
-
-
-  ● The National Suicide Prevention Lifeline at 1.800.273.TALK (8255)
-
-
-  #### Healthcare Providers: 
-
-
-
-  She is part of a large network of therapists offering (a limited number of) *5 free
-
-  sessions* to any lifesaving healthcare worker providing care during the COVID-19
-
-  pandemic. **Contact** Lana Isaacson you qualify or if you know someone in the field
-
-  who could benefit from counseling services: 720-432-5262.
+shownotes: 'In Episode #8 of Everyday Heroes: A COVID-19 Podcast, we meet Lana
+  Isaacson. She is a couples and family therapist who encourages her clients to
+  be "relationship heroes".'
 ---
+### 24-7 Support for Everyone and Affordable Therapy!
+
+Lana Isaacson, LCSW, CAC III, is offering a 20% off rate on packages of 5 sessions
+and for clients struggling financially 25% off packages. She also recommends the
+interactive online relationship workshop, \[Hold Me Tight](https://holdmetightonline.com/). Here are additional resources
+that may be helpful during this time.
+
+#### 24-7 Hotlines: 
+
+● Colorado Crisis Support Line 1.844.493.TALK (8255)
+
+● The National Suicide Prevention Lifeline at 1.800.273.TALK (8255)
+
+#### Healthcare Providers: 
+
+She is part of a large network of therapists offering (a limited number of) *5 free
+sessions* to any lifesaving healthcare worker providing care during the COVID-19
+pandemic. **Contact** Lana Isaacson you qualify or if you know someone in the field
+who could benefit from counseling services: 720-432-5262.
+
 “Memories heal the living. We pray for the living.”
 
 **Angela**: Like Episode Seven, this episode was recorded on July 1st, 2020. At this time, several European countries relaxed their travel restrictions, but not for Americans, due to the fact that the average number of cases per day in the United States was at its highest level so far. As of July 1st, 2020, the total number of deaths due to COVID-19 in the United States was almost 131,000. This is our eighth episode of *Everyday Heroes*, a conversation with Lana Isaacson, a couple’s and family therapist who encourages her clients to be relationship heroes.
