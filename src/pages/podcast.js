@@ -5,27 +5,7 @@ import podcastStyles from './podcast.module.scss'
 import podcastCover from "../images/eh__cover.png"
 //import playButton from "../images/play_white.png"
 
-const PodcastPage = () => {
-
-    const data = useStaticQuery (graphql`
-      query{
-          allMarkdownRemark{
-            edges{
-              node{
-                frontmatter{
-                    title
-                    date (formatString: "MMMM DD, YYYY")
-                    videoSourceURL
-                    authors
-                }
-                fields{
-                  slug
-                }
-              }
-            }
-          }
-        }
-  `)
+const PodcastPage = ({data}) => {
 
     return (
         <div>
@@ -43,13 +23,16 @@ const PodcastPage = () => {
                             <li className={podcastStyles.podcast}>
                               <div className={podcastStyles.episodeCover}> 
                                 <img className={podcastStyles.img_ep_cover}
+                                  // Trying to pull in each picture of the guest from each of the relative path from Episodes folder 
+                                  // but its not working
+                                  //src={`../episodes/ep${edge.node.frontmatter.episodeNumber}/${edge.node.frontmatter.guestPhoto}`}
                                   src={podcastCover}
-                                  alt="podcast episode cover"></img>   
+                                  alt="podcast episode cover" ></img>   
                               </div>
                                 
                                 <h3>{edge.node.frontmatter.title} </h3>
                                 <h4> {edge.node.frontmatter.date} </h4>
-                                <h5> {edge.node.frontmatter.authors}</h5>
+                                <h5> {edge.node.frontmatter.guestName}</h5>
                               
                             </li></Link>
 
@@ -67,3 +50,29 @@ const PodcastPage = () => {
 }
 
 export default PodcastPage
+
+export const pageQuery = graphql`
+query{
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }){
+      edges{
+        node{
+          frontmatter{
+              title
+              date (formatString: "MMMM DD, YYYY")
+              guestName
+              guestPhoto{
+                relativePath
+                absolutePath
+                extension
+              }
+              episodeNumber
+             
+          }
+          fields{
+            slug
+          }
+        }
+      }
+    }
+  }
+`
