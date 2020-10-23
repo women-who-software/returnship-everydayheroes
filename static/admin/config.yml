@@ -1,25 +1,41 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+  #branch: master # Branch to update (optional; defaults to master)
 
-# This line should *not* be indented
-media_folder: "images/uploads" # Media files will be stored in the
+# when using the local proxy server port (for debugging on local build set to 'true')
+# open another Terminal instance and excute this command to get it running:
+# npx netlify-cms-proxy-server
+local_backend: false
 
 # These lines should *not* be indented
-media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+media_folder: "src/episodes" # Media files will be stored in the repo under static/img
+public_folder: "/episodes" # The src attribute for uploaded media will begin with /img
+media_folder_relative: true
 
 collections:
   - name: "episode" # Used in routes, e.g., /admin/collections/blog
     label: "Episode" # Used in the UI
-    folder: "_collections/episodes" # The path to the folder where the documents are stored
+    folder: "src/episodes" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: 'ep{{episodeNumber}}'  # Filename template
+    media_folder: ''
+    public_folder: ''
+    path: '{{slug}}/{{slug}}' 
+    preview_path: 'episodes/{{slug}}' 
+    editor:
+      preview: true
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "episode"}
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Title of the episode ex: 'Season 1 Episode 1: Ryan Seamy'", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      # - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Guest Photo, name: "guest_photo", widget: "image"}
-      - {label: "Vimeo Video Episode number ex: 430343600 ", name: "vim_ep_num", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Guest Name ex: 'Ryan Seamy'", name: "guestName", widget: "string"}
+      - {label: "Guest Photo", name: "guestPhoto", widget: "image"}
+      - {label: "Guest Biography", name: "guestBio", widget: "text"}
+      - {label: "Episode Number ex: '1'", name: "episodeNumber", widget: "string"}
+      - {label: "Slug (please follow format of ep and episode number ex: 'ep1'", name: "slug", widget: "string" }
+      # Grab Vimeo ep num from client to build videoSourceURL: "https://player.vimeo.com/video/430343600?app_id=122963"
+      - {label: "Vimeo video episode number (found in the vimeo url) ex: '430343600'  ", name: "vim_ep_num", widget: "string"}
+      # Grab Buzzsprout ep num from audioSourceURL: "https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3"
+      - {label: "Buzzsprout audio episode url (copy the buzzsprout url and add '.mp3') ex: 'https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3' ", name: "buz_ep_url", widget: "string"}
+      - {label: "Show Notes (copied from buzzsprout page)", name: "shownotes", widget: "markdown"}
+      - {label: "Podcast Transcript (copied from buzzsprout page)", name: "body", widget: "markdown"}

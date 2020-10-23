@@ -1,4 +1,5 @@
 const path = require('path');
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 // This onCreateNode Gatsby API call creates a new 'node' or a thing to be able to
 // manipulate as needed for the project. This particular piece of code will gather the

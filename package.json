@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "everyday-heroes-a-covid-19-podcast-website",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "We're creating a podcast that features Everyday Heroes who are willing to tell their stories and to share the impact they've made during the COVID-19 pandemic.",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -18,20 +18,25 @@
     "gatsby-cli": "^2.12.111",
     "gatsby-image": "^2.4.7",
     "gatsby-plugin-manifest": "^2.4.11",
+    "gatsby-plugin-netlify-cms": "^4.3.12",
     "gatsby-plugin-sass": "^2.3.2",
     "gatsby-plugin-sharp": "^2.6.11",
     "gatsby-remark-embed-video": "^3.0.10",
+    "gatsby-remark-images": "^3.3.28",
+    "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-source-buzzsprout": "^0.3.1",
-    "gatsby-source-buzzsprout-api": "^1.0.3",
+    "gatsby-source-buzzsprout-api": "^1.0.4",
     "gatsby-source-filesystem": "^2.3.11",
     "gatsby-transformer-json": "^2.4.15",
     "gatsby-transformer-remark": "^2.8.25",
     "gatsby-transformer-sharp": "^2.5.5",
+    "netlify-cms-app": "^2.12.19",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-h5-audio-player": "^3.3.0",
     "react-hook-form": "^5.7.2",
+    "remark-html": "^12.0.0",
     "yup": "^0.29.1"
   },
   "devDependencies": {
@@ -40,9 +45,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/wwcodecolorado/returnship-everydayheroes"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/wwcodecolorado/returnship-everydayheroes/issues"
   }
 }
