@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Meet from '../components/team'
+import Meet from '../components/meet'
 
 const AboutPage = () => {
     return (

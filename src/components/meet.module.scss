@@ -13,18 +13,23 @@ h3 {
   text-align:center;
 }
 
+p {
+  margin-top: 2em;
+  display: block;
+}
+
 .leftContainer {
   -ms-flex: 50%; /* IE10 */
   flex: 30%;
   margin: auto;
-  padding:0.45rem 1.45rem 0.45rem 1.45rem;
+  padding:0.35rem 1.45rem 0.45rem 1.45rem;
   width: 100px;
-  height: 120vh;
+  height: 160vh;
 }
 
 .rightContainer {
   margin: auto;
   width: 1200px;
-  height: 100vh;
-  padding:0.45rem 1.45rem 0.45rem 1.45rem;
+  height: 160vh;
+  padding:1.45rem 1.45rem 0.45rem 1.45rem;
 }

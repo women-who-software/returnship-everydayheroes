@@ -8,19 +8,19 @@ module.exports = {
   /* Your site config here */
   plugins: [
 
-    
+
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'src',
+        name: `src`,
         path: `${__dirname}/src/`
       },
     },
@@ -52,7 +52,7 @@ module.exports = {
         crossOrigin: `use-credentials`,
       },
     },
-    
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
 
@@ -76,9 +76,16 @@ module.exports = {
                 ], //Optional: Override URL of a service provider, e.g to enable youtube-nocookie support
                 containerClass: 'embedVideo-container', //Optional: Custom CSS class for iframe container, for multiple classes separate them by space
               },
-            }
-            ]
+            }]
           }
-        }
+      },
+      `gatsby-transformer-json`,
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          name: `teamimages`,
+          path: `${__dirname}/src/assets/`,
+        },
+      },
   ],
 }
