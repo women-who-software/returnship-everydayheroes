@@ -13,23 +13,23 @@ module.exports = {
   /* Your site config here */
   plugins: [
 
-    
+
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'src',
+        name: `src`,
         path: `${__dirname}/src/`
       },
     },
- 
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -48,7 +48,7 @@ module.exports = {
         crossOrigin: `use-credentials`,
       },
     },
-    
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
 
@@ -84,7 +84,7 @@ module.exports = {
 
 
             ],
-            
+
           },
     },
 
