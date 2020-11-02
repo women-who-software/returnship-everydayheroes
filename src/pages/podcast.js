@@ -1,9 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import podcastStyles from './podcast.module.scss'
-import podcastCover from "../images/eh__cover.png"
+//import podcastCover from "../images/eh__cover.png"
 //import playButton from "../images/play_white.png"
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const PodcastPage = ({data}) => {
 
@@ -22,12 +23,13 @@ const PodcastPage = ({data}) => {
                           <Link to={`/episode/${edge.node.fields.slug}`}>
                             <li className={podcastStyles.podcast}>
                               <div className={podcastStyles.episodeCover}> 
-                                <img className={podcastStyles.img_ep_cover}
-                                  // Trying to pull in each picture of the guest from each of the relative path from Episodes folder 
-                                  // but its not working
-                                  //src={`../episodes/ep${edge.node.frontmatter.episodeNumber}/${edge.node.frontmatter.guestPhoto}`}
-                                  src={podcastCover}
-                                  alt="podcast episode cover" ></img>   
+                                
+                                  <PreviewCompatibleImage
+                                    imageInfo={{
+                                      image: edge.node.frontmatter.guestPhoto,
+                                      alt: "podcast episode cover",
+                                      }}
+                                   />
                               </div>
                                 
                                 <h3>{edge.node.frontmatter.title} </h3>
@@ -61,9 +63,11 @@ query{
               date (formatString: "MMMM DD, YYYY")
               guestName
               guestPhoto{
-                relativePath
-                absolutePath
-                extension
+                childImageSharp {
+                  fluid(maxWidth: 250, quality: 100, maxHeight: 250 ) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
               }
               episodeNumber
              

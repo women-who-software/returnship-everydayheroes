@@ -2,8 +2,6 @@
 title: "Season 1 Episode 0: Trailer "
 guestName: Micheal Starks
 episodeNumber: "0"
-shownotes: "Here's a glimpse of the people we'll meet in Everyday Heroes: A
-  COVID-19 Podcast."
 slug: ep0
 date: 2020-07-13
 guestBio: "Michael T. Starks (Producer, Everyday Heroes: A COVID-19 Podcast) is
@@ -17,3 +15,4 @@ buz_ep_url: https://www.buzzsprout.com/1186835/4510406-trailer.mp3
 guestPhoto: MTS1.jpg
 vim_ep_num: "436977653"
 ---
+Here's a glimpse of the people we'll meet in Everyday Heroes: A COVID-19 Podcast.
