@@ -1,6 +1,15 @@
 backend:
   name: git-gateway
-  #branch: master # Branch to update (optional; defaults to master)
+  branch: master
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
+  
+# All unpublished entries will be arranged in a board according to their status, and they can be further reviewed and edited before going live.
+publish_mode: editorial_workflow
 
 # when using the local proxy server port (for debugging on local build set to 'true')
 # open another Terminal instance and excute this command to get it running:
@@ -8,8 +17,10 @@ backend:
 local_backend: false
 
 # These lines should *not* be indented
-media_folder: "src/episodes" # Media files will be stored in the repo under static/img
-public_folder: "/episodes" # The src attribute for uploaded media will begin with /img
+# Media files will be stored in the repo under static/img
+media_folder: static/img 
+# The src attribute for uploaded media will begin with /img
+public_folder: /img 
 media_folder_relative: true
 
 collections:
@@ -18,24 +29,50 @@ collections:
     folder: "src/episodes" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: 'ep{{episodeNumber}}'  # Filename template
-    media_folder: ''
-    public_folder: ''
     path: '{{slug}}/{{slug}}' 
     preview_path: 'episodes/{{slug}}' 
     editor:
       preview: true
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "episode"}
-      - {label: "Title of the episode ex: 'Season 1 Episode 1: Ryan Seamy'", name: "title", widget: "string"}
+      # Episode Title
+      - label: "Title of the episode ex: 'Season 1 Episode 1: Ryan Seamy'"
+        name: "title" 
+        widget: "string"      
+      # Published date
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Guest Name ex: 'Ryan Seamy'", name: "guestName", widget: "string"}
+      # Name of guest
+      - label: "Guest Name ex: 'Ryan Seamy'"
+        name: "guestName"
+        widget: "string"
+      # Guest Photo
       - {label: "Guest Photo", name: "guestPhoto", widget: "image"}
+      # Guest Bio
       - {label: "Guest Biography", name: "guestBio", widget: "text"}
-      - {label: "Episode Number ex: '1'", name: "episodeNumber", widget: "string"}
-      - {label: "Slug (please follow format of ep and episode number ex: 'ep1'", name: "slug", widget: "string" }
+      # Episode number
+      - label: "Episode Number ex: '1'"
+        name: "episodeNumber"
+        widget: "string"
+        pattern: ["^[0-9]", " Must be a number "]
+      # Slug/ unique identifier for each episode
+      - label: "Slug (please follow format of ep and episode number ex: 'ep1'"
+        name: "slug"
+        widget: "string"
+        pattern: ['ep\d{1,}', "Must be lowercase ep followed by a number"]
+      # Url for vimeo of each episode
       # Grab Vimeo ep num from client to build videoSourceURL: "https://player.vimeo.com/video/430343600?app_id=122963"
-      - {label: "Vimeo video episode number (found in the vimeo url) ex: '430343600'  ", name: "vim_ep_num", widget: "string"}
+      - label: "Vimeo video episode number (found in the vimeo url) ex: '430343600' "
+        name: "vim_ep_num"
+        widget: "string"
+        pattern: ['\d{9,}', "Must be a number thats at least 9 digits"]
+      # Url for audio of the episode
       # Grab Buzzsprout ep num from audioSourceURL: "https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3"
-      - {label: "Buzzsprout audio episode url (copy the buzzsprout url and add '.mp3') ex: 'https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3' ", name: "buz_ep_url", widget: "string"}
-      - {label: "Show Notes (copied from buzzsprout page)", name: "shownotes", widget: "markdown"}
-      - {label: "Podcast Transcript (copied from buzzsprout page)", name: "body", widget: "markdown"}
+      - label: "Buzzsprout audio episode url (copy the buzzsprout url and add '.mp3') ex: 'https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3' "
+        name: "buz_ep_url"
+        widget: "string"
+        pattern: ['(https:\/\/www\.buzzsprout\.com\/1186835\/.+\.mp3)', "Must be a URL matching the example provided"]
+      # Body of each new episode
+      - label: "Add the show notes, followed by any episode resources, then add '### Transcript' as well as the podcast Transcript (copied from buzzsprout page) "
+        name: "body"
+        widget: "markdown"
+       

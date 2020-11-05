@@ -24,6 +24,7 @@
     "gatsby-remark-embed-video": "^3.0.10",
     "gatsby-remark-images": "^3.3.28",
     "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-remark-relative-images-v2": "^0.1.5",
     "gatsby-source-buzzsprout": "^0.3.1",
     "gatsby-source-buzzsprout-api": "^1.0.4",
     "gatsby-source-filesystem": "^2.3.11",

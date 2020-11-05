@@ -3,8 +3,8 @@ title: "Season 1 Episode 4: Roger Lopez "
 date: 2020-08-10T07:05:00.000Z
 guestName: Roger Lopez
 guestPhoto: rogerlopez.jpg
-guestBio: Roger Lopez (featured in Episode 4) is CEO of Black Platinum
-  Illusions, LLC : www.rogermagic.com. He is a professional magician and is a
+guestBio: Roger Lopez is CEO of Black Platinum
+  Illusions, LLC. He is a professional magician and is a
   member of The Society of American Magicians and The Mile High Magicians
   Society.  He is known as a world card expert and named Top Magicians Denver
   for 2017, 2018, 2019 and 2020. His unique performances have been seen by
@@ -16,15 +16,14 @@ episodeNumber: "4"
 slug: ep4
 vim_ep_num: "445965445"
 buz_ep_url: https://www.buzzsprout.com/1186835/4912976-episode-4-roger-lopez.mp3
-shownotes: >-
-  In Episode #4 of Everyday Heroes: A COVID-19 Podcast, we meet Roger Lopez, a
-  professional magician, who specializes in close-up magic. He describes his
-  experiences during the pandemic, and he shares his work with a quick
-  performance.
 
-
-  You can follow his work at http://www.rogermagic.com/.
 ---
+
+In Episode #4 of Everyday Heroes: A COVID-19 Podcast, we meet Roger Lopez, a professional magician, who specializes in close-up magic. He describes his experiences during the pandemic, and he shares his work with a quick performance.
+You can follow his work at [http://www.rogermagic.com/](http://www.rogermagic.com/).
+
+### Transcript 
+
 “Memories heal the living. We pray for the living.”
 
 **Angela**: On May 20, 2020, the New York Times reported that the United States of America has had a sharper rise in unemployment than other countries during the COVID pandemic. At this time, the total number of deaths due to COVID-19 in the United States was over 95,000. This is the context of our fourth episode of *Everyday Heroes*, a conversation with Roger Lopez, a professional magician who has performed at many charity events.
