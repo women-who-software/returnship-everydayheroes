@@ -29,7 +29,7 @@ const encode = (data) => {
 export default function StoryForm() {
   const { register, handleSubmit, formState, errors, reset } = useForm({
   validationSchema: ShareYourStorySchema,
-    mode: 'onChange',
+    mode: 'onBlur',
   });
     const [state, setState] = React.useState({})
     const [feedbackMsg, setFeedbackMsg] = useState(null)
@@ -91,7 +91,7 @@ export default function StoryForm() {
                         name="fullName"
                         id = "fullName"
                         placeholder="Jane Smith"
-                        onChange={handleChange}
+                        onBlur={handleChange}
                         ref={register}
                         aria-label="Enter your full name"
                          />
@@ -111,7 +111,7 @@ export default function StoryForm() {
                         name="location"
                         id="location"
                         placeholder = " Denver, CO"
-                        onChange={handleChange}
+                        onBlur={handleChange}
                         ref={register}
                         aria-label="Enter your location"
                          />
@@ -132,7 +132,7 @@ export default function StoryForm() {
                           }
                         name="email"
                         placeholder="janesmith@email.com"
-                        onChange={handleChange}
+                        onBlur={handleChange}
                         ref={register}
                         aria-label="Enter your email"
                          />
@@ -150,7 +150,7 @@ export default function StoryForm() {
                           }
                         name="phone"
                         placeholder="123 456 5555"
-                        onChange={handleChange}
+                        onBlur={handleChange}
                         ref={register}
                         aria-label= "Enter your phone number"
                         />
@@ -167,7 +167,7 @@ export default function StoryForm() {
                     name="zoom_option"
                     id="zoom_option"
                     defaultValue="undecided"
-                    onChange={handleChange}
+                    onBlur={handleChange}
                     ref={register} >
                         <option value= "undecided" >Undecided</option>
                         <option value="Yes">Yes</option>
@@ -188,7 +188,7 @@ export default function StoryForm() {
                     id="story"
                     rows="6"
                     placeholder="My story..."
-                    onChange={handleChange}
+                    onBlur={handleChange}
                     ref={register}
                     aria-label= " Enter your everyday hero COVID19 Story"
                      />

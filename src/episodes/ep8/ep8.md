@@ -1,11 +1,14 @@
 ---
-layout: episode
-title: "Season 1 Episode 8: Lana Isaacson"
-date: 2020-10-14T01:26:24.149Z
+# Enter featuerd guest name here, such as Ryan Seamy with capitalzation as needed
 guestName: Lana Isaacson
+# Enter the episode number
+episodeNumber: "8"
+layout: episode
+#  Enter title of the episode following this format: Season 1 Episode 1: Ryan Seamy
+title: "Season 1 Episode 8: Lana Isaacson"
+date: 2020-09-07T15:26:24.149Z
 guestPhoto: lanaisaacson.jpg
-guestBio: |-
-  Lana Isaacson, LCSW, CAC III, MFTC is an individual,
+guestBio: Lana Isaacson, LCSW, CAC III, MFTC is an individual,
   couples and family therapist in private
   practice in the Denver Metro area. She
   also is an adjunct faculty member at
@@ -17,20 +20,23 @@ guestBio: |-
   improves the quality of their lives and
   allows them to pass down these skills to
   future generations. 
-episodeNumber: "8"
+# Keept it lower case, ex: ep3
 slug: ep8
+# ex: 430343600
 vim_ep_num: "455299588"
+# ex: https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3
 buz_ep_url: https://www.buzzsprout.com/1186835/5320147-episode-8-lana-isaacson.mp3
-shownotes: 'In Episode #8 of Everyday Heroes: A COVID-19 Podcast, we meet Lana
-  Isaacson. She is a couples and family therapist who encourages her clients to
-  be "relationship heroes".'
 ---
+
+In Episode #8 of Everyday Heroes: A COVID-19 Podcast, we meet Lana Isaacson. She is a couples and family therapist who encourages her clients to be "relationship heroes".
+
+
 ### 24-7 Support for Everyone and Affordable Therapy!
 
 Lana Isaacson, LCSW, CAC III, is offering a 20% off rate on packages of 5 sessions
 and for clients struggling financially 25% off packages. She also recommends the
-interactive online relationship workshop, \[Hold Me Tight](https://holdmetightonline.com/). Here are additional resources
-that may be helpful during this time.
+interactive online relationship workshop, [https://holdmetightonline.com/](https://holdmetightonline.com/). Here are additional resources
+that may be helpful during this time:
 
 #### 24-7 Hotlines: 
 
@@ -42,8 +48,12 @@ that may be helpful during this time.
 
 She is part of a large network of therapists offering (a limited number of) *5 free
 sessions* to any lifesaving healthcare worker providing care during the COVID-19
-pandemic. **Contact** Lana Isaacson you qualify or if you know someone in the field
+pandemic. 
+
+**Contact** Lana Isaacson if you qualify or if you know someone in the field
 who could benefit from counseling services: 720-432-5262.
+
+### Transcript 
 
 “Memories heal the living. We pray for the living.”
 

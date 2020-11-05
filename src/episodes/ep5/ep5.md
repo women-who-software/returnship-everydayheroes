@@ -4,17 +4,16 @@ title: "Season 1 Episode 5: Michelle Owen-Clemenson"
 date: 2020-08-18T04:04:40.403Z
 guestName: Michelle Owen-Clemenson
 guestPhoto: michelle.png
-guestBio: Michelle Owen-Clemenson (featured in Episode 5) is a Nurse in Colorado
-  who helps people determine if they need to be tested for COVID-19.
+guestBio: Michelle Owen-Clemenson is a Nurse in Colorado who helps people determine if they need to be tested for COVID-19.
 episodeNumber: "5"
 slug: ep5
 vim_ep_num: "445971631"
 buz_ep_url: https://www.buzzsprout.com/1186835/4912997-episode-5-michelle-owen-clemenson.mp3
-shownotes: "In Episode #5 of Everyday Heroes: A COVID-19 Podcast, we meet
-  Michelle Owen-Clemenson, a nurse who provides valuable information to many
-  people. She talks about her work on the front lines and how to make the best
-  of this strange time."
 ---
+In Episode #5 of Everyday Heroes: A COVID-19 Podcast, we meet Michelle Owen-Clemenson, a nurse who provides valuable information to many people. She talks about her work on the front lines and how to make the best of this strange time.
+
+### Transcript 
+
 “Memories heal the living. We pray for the living.”
 
 **Angela**: On May 26, 2020, more and more people in the United States decided to venture outside. Some were being safer than others. At this time, the total number of deaths due to COVID-19 in the United States had just crossed over 100,000. The New York Times reported that the actual count was probably closer to 130,000. We've lost more people to COVID-19 than to ALL wars the United States has fought during the past sixty years. In Colorado, Governor Polis announced that the state's prohibition on downhill skiing has been lifted and that private campsites are now open. With restrictions, restaurants would soon be allowed to let people have dine-in service at 50 percent capacity. This is the context for our fifth episode of Everyday Heroes, a conversation with Michelle Owen-Clemenson, a nurse who provides valuable information to many people.

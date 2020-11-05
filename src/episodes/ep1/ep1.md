@@ -3,7 +3,7 @@ title: "Season 1 Episode 1: Ryan Seamy"
 date: 2020-07-20
 guestName: Ryan Seamy
 guestPhoto: RyanSeamy.jpg
-guestBio: Ryan Seamy (featured in Episode 1) is an actor and producer who has
+guestBio: Ryan Seamy is an actor and producer who has
   worked and appeared in every category of production including feature films,
   television, commercials, web series, music videos, stage and print as a
   professional Actor. Still looking for that breakout role, Ryan is extremely
@@ -13,10 +13,12 @@ episodeNumber: "1"
 slug: ep1
 vim_ep_num: "430343600"
 buz_ep_url: https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3
-shownotes: On April 26, 2020, Ryan Seamy, an actor and blood donor, talks to our
-  host, Angela Rothermel, about a comedy video he's produced and his experience
-  so far in dealing with the COVID-19 pandemic.
+
 ---
+On April 26, 2020, Ryan Seamy, an actor and blood donor, talks to our host, Angela Rothermel, about a comedy video he's produced and his experience so far in dealing with the COVID-19 pandemic.
+
+### Transcript 
+
 “Memories heal the living. We pray for the living.”
 
 **Angela**: On April 26, 2020, a lot of people were staying at home due to the COVID-19 pandemic. At this time, the total number of deaths due to COVID-19 in the United States was nearing 56,000. In Colorado, restrictions were about to be lifted, for what Governor Jared Polis called the Safer-at-Home phase. We started to realize the importance of wearing face masks to limit the spread of the virus. This is the context for our first episode of Everyday Heroes, a conversation with Ryan Seamy, an actor and blood donor.

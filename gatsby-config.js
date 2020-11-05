@@ -57,7 +57,7 @@ module.exports = {
           options: {
             "excerpt_separator": `<!-- endexcerpt -->`,
             plugins: [
-              `gatsby-remark-relative-images`,
+              `gatsby-remark-relative-images-v2`,
               {
                 resolve: `gatsby-remark-images`,
                 options: {
