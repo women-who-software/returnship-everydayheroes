@@ -38,16 +38,13 @@ collections:
       # Episode Title
       - label: "Title of the episode ex: 'Season 1 Episode 1: Ryan Seamy'"
         name: "title" 
-        widget: "string"
-        comment: " Enter title of the episode following this format: Season 1 Episode 1: Ryan Seamy"
-        
+        widget: "string"      
       # Published date
       - {label: "Publish Date", name: "date", widget: "datetime"}
       # Name of guest
       - label: "Guest Name ex: 'Ryan Seamy'"
         name: "guestName"
         widget: "string"
-        comment: "Enter featuerd guest name here, such as Ryan Seamy with capitalzation as needed"
       # Guest Photo
       - {label: "Guest Photo", name: "guestPhoto", widget: "image"}
       # Guest Bio
@@ -56,20 +53,17 @@ collections:
       - label: "Episode Number ex: '1'"
         name: "episodeNumber"
         widget: "string"
-        comment: "Enter the episode number"
         pattern: ["^[0-9]", " Must be a number "]
       # Slug/ unique identifier for each episode
       - label: "Slug (please follow format of ep and episode number ex: 'ep1'"
         name: "slug"
         widget: "string"
-        comment: "Keept it lower case, ex: ep3"
         pattern: ['ep\d{1,}', "Must be lowercase ep followed by a number"]
       # Url for vimeo of each episode
       # Grab Vimeo ep num from client to build videoSourceURL: "https://player.vimeo.com/video/430343600?app_id=122963"
       - label: "Vimeo video episode number (found in the vimeo url) ex: '430343600' "
         name: "vim_ep_num"
         widget: "string"
-        comment: 'ex: 430343600' 
         pattern: ['\d{9,}', "Must be a number thats at least 9 digits"]
       # Url for audio of the episode
       # Grab Buzzsprout ep num from audioSourceURL: "https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3"
@@ -77,9 +71,8 @@ collections:
         name: "buz_ep_url"
         widget: "string"
         pattern: ['(https:\/\/www\.buzzsprout\.com\/1186835\/.+\.mp3)', "Must be a URL matching the example provided"]
-        comment: 'ex: https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3'
       # Body of each new episode
-      - label: "show notes, podcast Transcript (copied from buzzsprout page) along with episode resources"
+      - label: "Add the show notes, followed by any episode resources, then add '### Transcript' as well as the podcast Transcript (copied from buzzsprout page) "
         name: "body"
         widget: "markdown"
-        comment: 'In this field, copy in show notes (from buzzsprout), any resources presented in the episode ( if any), and the podcast transcript (from buzzsprout) as the last part.'
+       
