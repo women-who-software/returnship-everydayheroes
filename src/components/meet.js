@@ -9,7 +9,7 @@ const Meet = () => {
   query meetQuery {
     allFile(
       filter: {
-        extension: { regex: "/(jpg)||(jpeg)/" }
+        extension: { regex: "/(jpg)||(jpeg)||(png)/" }
         relativeDirectory: { eq: "assets" }
       }
     ) {
@@ -50,6 +50,8 @@ const Meet = () => {
             <br></br>
             <br></br>
             <br></br>
+            <br></br>
+            <br></br>
             <p>Michael T. Starks (Producer, EverydayHeroes: A COVID-19
               Podcast) is a software developer and movie-maker with a
               background in physics. He is known for directing a modern
@@ -59,6 +61,8 @@ const Meet = () => {
               Ionogen Media, LLC, are known as the “Mom and Pop” of
               Colorado movie-making. This is his first podcast.
             </p>
+            <br></br>
+            <br></br>
             <br></br>
             <br></br>
             <br></br>
@@ -75,9 +79,13 @@ const Meet = () => {
             <br></br>
             <br></br>
             <br></br>
+            <br></br>
+            <br></br>
             <p>Rhonda Peters (Advisor) serves as an Area Director for
             Toastmasters in Colorado.
             </p>
+            <br></br>
+            <br></br>
             <br></br>
             <br></br>
             <br></br>
