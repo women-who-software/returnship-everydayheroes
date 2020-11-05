@@ -11,7 +11,7 @@ const ErrorPage = () => {
     query errorQuery {
       file(relativePath: { eq: "virus.jpg" }) {
         childImageSharp {
-          fluid(grayscale: true, quality: 100, maxWidth: 500) {
+          fluid(grayscale: true, quality: 100, maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }

@@ -2,28 +2,24 @@
 title: "Season 1 Episode 3: Allison Hayes"
 guestName: Allison Hayes
 episodeNumber: "3"
-shownotes: >-
-  In Episode #3 of Everyday Heroes: A COVID-19 Podcast, we meet Allison Hayes,
-  who works on a college campus in Indiana. She talks about making masks and the
-  strategies she's using to help others during the pandemic.
-
-
-  Here's a link to her mask-making tutorial.
-
-  https://vimeo.com/443991987
-
 slug: ep3
 date: 2020-08-03
-guestBio: "Allison Hayes (featured in Episode #3) work in student affairs at a
+guestBio: "Allison Hayes work in student affairs at a
   university in Indiana. At the time of her interview, she has made over 80
   masks for her friends and family members. Allison naturally enjoys crafts of
   all kinds and spends her other time with her dog and working out daily."
 buz_ep_url: https://www.buzzsprout.com/1186835/4559810-episode-3-allison-hayes.mp3
 vim_ep_num: "438066818"
-
 guestPhoto: allisonhayes.jpg
 
 ---
+
+In Episode #3 of Everyday Heroes: A COVID-19 Podcast, we meet Allison Hayes, who works on a college campus in Indiana. She talks about making masks and the strategies she's using to help others during the pandemic.
+Here's a link to her mask-making tutorial: [https://vimeo.com/443991987](https://vimeo.com/443991987).
+
+
+### Transcript 
+
 “Memories heal the living. We pray for the living.”
 
 **Angela**: May 17, 2020 is the day after former President Barack Obama gave two virtual commencement speeches. He said, “If we’re going to save the environment and defeat future pandemics, then we’re going to have to do it together. So be alive to one another’s struggles. Stand up for one another’s rights.” At this time, the total number of deaths due to COVID-19 in the United States was just over 91,000. This is the context for our third episode of *Everyday Heroes*, a conversation with Allison Hayes, who is responsible for student conduct and integrity on a college campus in Indiana. She also has made over 80 protective masks for friends and family.

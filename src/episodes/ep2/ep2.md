@@ -3,7 +3,7 @@ title: "Season 1 Episode 2: Marla Kalin"
 date: 2020-07-28T01:34:00.000Z
 guestName: Marla Kalin
 guestPhoto: marlakalin.jpg
-guestBio: Marla Kalin (featured in Episode 2) is the Director of a memory care
+guestBio: Marla Kalin is the Director of a memory care
   unit in Colorado. She is also a Canadian born actress, songwriter, and
   screenwriter who’s been acting since the age of nine in stage, television and
   film. To date she has written over 20 songs and is currently writing several
@@ -12,10 +12,13 @@ episodeNumber: "2"
 slug: ep2
 vim_ep_num: "436276626"
 buz_ep_url: https://www.buzzsprout.com/1186835/4483412-episode-2-marla-kalin.mp3
-shownotes: "In Episode #2 of Everyday Heroes: A COVID-19 Podcast, we meet Marla
-  Kalin, Director of a Memory Care Unit in Colorado. She talks about how things
-  have changed for the residents during the COVID-19 pandemic."
+
 ---
+
+In Episode #2 of Everyday Heroes: A COVID-19 Podcast, we meet Marla Kalin, Director of a Memory Care Unit in Colorado. She talks about how things have changed for the residents during the COVID-19 pandemic.
+
+### Transcript 
+
 “Memories heal the living. We pray for the living.”
 
 **Angela**: On May 13, 2020, the number of new cases confirmed each day was declining across the United States. At this time, the total number of deaths due to COVID-19 in the United States was nearing 86,000. In Colorado, Governor Jared Polis reminded us that if we cannot be together physically to celebrate Easter, we can be together emotionally and spiritually. This is the context of our second episode of Everyday Heroes, a conversation with Marla Kalin, Director of a Memory Care facility in Colorado.

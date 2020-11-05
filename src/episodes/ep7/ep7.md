@@ -1,19 +1,29 @@
 ---
-layout: episode
-title: "Season 1 Episode 7: John Brown"
-date: 2020-09-28T03:05:10.543Z
+# Enter featuerd guest name here, such as Ryan Seamy with capitalzation as needed
 guestName: John Brown
-guestPhoto: johnbrown.png
-guestBio: "John Brown (featured in Episode #7) works at Starbucks and enjoys
-  fly-fishing."
+# Enter the episode number
 episodeNumber: "7"
+layout: episode
+#  Enter title of the episode following this format: Season 1 Episode 1: Ryan Seamy
+title: "Season 1 Episode 7: John Brown"
+date: 2020-08-31T15:05:10.543Z
+guestPhoto: johnbrown.png
+guestBio: "John Brown works at Starbucks and enjoys fly-fishing."
+# Keept it lower case, ex: ep3
 slug: ep7
+# ex: 430343600
 vim_ep_num: "453095981"
+# ex: https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3
 buz_ep_url: https://www.buzzsprout.com/1186835/5213464-episode-7-john-brown.mp3
-shownotes: "In Episode #7 of Everyday Heroes: A COVID-19 Podcast, we meet John
-  Brown. He has been on the front lines throughout the pandemic, serving coffee
-  at a Starbucks in Broomfield, Colorado."
 ---
+
+
+### Show Notes
+
+In Episode #7 of Everyday Heroes: A COVID-19 Podcast, we meet John Brown. He has been on the front lines throughout the pandemic, serving coffee at a Starbucks in Broomfield, Colorado.
+
+### Transcript 
+
 “Memories heal the living. We pray for the living.”
 
 **Angela**: We intentionally took a break from recording episodes during the month of June, 2020. Crowds of people gathered to protest the death of George Floyd. As of July 1st, 2020, the total number of deaths due to COVID-19 was almost 131,000. This is the context for our seventh episode of *Everyday Heroes*, a conversation with John Brown. He has been on the front lines during the whole pandemic, serving coffee at a Starbucks in Broomfield, Colorado.

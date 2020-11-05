@@ -1,10 +1,14 @@
 ---
-layout: episode
-title: "Season 1 Episode 6: Tanya Muftic"
-date: 2020-09-21T03:12:10.486Z
+# Enter featuerd guest name here, such as Ryan Seamy with capitalzation as needed
 guestName: Tanya Muftic
+# Enter the episode number
+episodeNumber: "6"
+layout: episode
+#  Enter title of the episode following this format: Season 1 Episode 1: Ryan Seamy
+title: "Season 1 Episode 6: Tanya Muftic"
+date: 2020-08-24T16:29:24.103Z
 guestPhoto: tanya.jpeg
-guestBio: Born and raised in Colorado, Tanya Muftic (featured in Episode 6) has
+guestBio: Born and raised in Colorado, Tanya Muftic has
   made activism for education and LGBTQ students a cornerstone of her work. In
   2018, Tanya published her first book of poetry, Two Souls Collided (Balboa
   Press), and started a community organization, TheTie Tuesday Project. The
@@ -12,14 +16,17 @@ guestBio: Born and raised in Colorado, Tanya Muftic (featured in Episode 6) has
   future. Grappling with depression, she is trying to take time to reflect on
   her blessings. She hopes she can once again work in the classroom providing
   stability and emotional support for her students.
-episodeNumber: "6"
+# Keept it lower case, ex: ep3
 slug: ep6
+# ex: 430343600
 vim_ep_num: "450828109"
+# ex: https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3
 buz_ep_url: https://www.buzzsprout.com/1186835/5110822-episode-6-tanya-muftic.mp3
-shownotes: "In Episode #6 of Everyday Heroes: A COVID-19 Podcast, we meet Tanya
-  Muftic, a Montessori teacher and LGBTQ activist. She talks about losing her
-  job and making all students feel welcome in her classroom."
 ---
+In Episode #6 of Everyday Heroes: A COVID-19 Podcast, we meet Tanya Muftic, a Montessori teacher and LGBTQ activist. She talks about losing her job and making all students feel welcome in her classroom
+
+### Transcript 
+
 “Memories heal the living. We pray for the living.”
 
 **Angela**: We recorded this episode of Everyday Heroes on May 27, 2020, two days after George Floyd died in Minneapolis. Four police officers involved in the arrest were fired, and the city's mayor said, "Being black in America should not be a death sentence." At this time, the total number of deaths due to COVID-19 in the United States was over 102,000. This is the context of our sixth episode of Everyday Heroes, a conversation with Tanya Muftic, a Montessori teacher and LGBTQ activist.
