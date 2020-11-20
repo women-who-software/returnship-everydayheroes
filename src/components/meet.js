@@ -9,7 +9,7 @@ const Meet = () => {
   query meetQuery {
     allFile(
       filter: {
-        extension: { regex: "/(jpg)||(jpeg)/" }
+        extension: { regex: "/(jpg)||(jpeg)||(png)/" }
         relativeDirectory: { eq: "assets" }
       }
     ) {
@@ -30,8 +30,7 @@ const Meet = () => {
   return (
     <div>
       <div>
-      <div className={teamStyles.h3}>
-        <h3 > Meet the team behind this podcast </h3></div>
+        <h3> Meet the team behind this podcast </h3>
         <div className={teamStyles.container}>
           <div className={teamStyles.leftContainer}>
             {data.allFile.edges.map(image => (
@@ -43,19 +42,17 @@ const Meet = () => {
             ))}
           </div>
           <div className={teamStyles.rightContainer}>
-            <div className={teamStyles.par}>
-            Glenda O’Neill (Advisor) is originally from Northern Ireland.
+            <p>Glenda O’Neill (Advisor) is originally from Northern Ireland.
             She works at Terumo BCT and has served as President of the
             Terumo BCT Toastmasters organization.
-            </div>
+            </p>
             <br></br>
             <br></br>
             <br></br>
             <br></br>
             <br></br>
             <br></br>
-            <div className={teamStyles.par}>
-            Michael T. Starks (Producer, EverydayHeroes: A COVID-19
+            <p>Michael T. Starks (Producer, EverydayHeroes: A COVID-19
               Podcast) is a software developer and movie-maker with a
               background in physics. He is known for directing a modern
               adaptation of Macbeth(2006) and the comedy ColoradoLand(2020).
@@ -63,30 +60,41 @@ const Meet = () => {
               Brick’s Gambit (2018). He and his wife Karilyn,the owners of
               Ionogen Media, LLC, are known as the “Mom and Pop” of
               Colorado movie-making. This is his first podcast.
-            </div>
+            </p>
             <br></br>
             <br></br>
             <br></br>
             <br></br>
             <br></br>
-            <div className={teamStyles.par}>
-            Pam Renall (Advisor) is an Actress, Host and Producer, known
+            <p>Pam Renall (Advisor) is an Actress, Host and Producer, known
             for her most recent role in Unfollower, a thriller feature film
             about cyber stalking. Pam is also in pre-production on several
             television and film projects. Pam is both a Comedic and Dramatic
             Actress trained in Colorado, and is local hire in LA, Atlanta,
             New Mexico and New Zealand.
-            </div>
+            </p>
             <br></br>
             <br></br>
             <br></br>
             <br></br>
             <br></br>
             <br></br>
-            <div className={teamStyles.par}>
-            Rhonda Peters (Advisor) serves as an Area Director for
+            <br></br>
+            <br></br>
+            <p>Rhonda Peters (Advisor) serves as an Area Director for
             Toastmasters in Colorado.
-            </div>
+            </p>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <p>Angela Rothermel is the Host of EverydayHeroes podcast. She
+            is an actress who lives and works in Colorado.
+            </p>
           </div>
         </div>
       </div>
