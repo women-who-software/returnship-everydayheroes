@@ -11,7 +11,7 @@ const PodcastPage = ({data}) => {
     return (
         <div>
             <Layout>
-                <h2> Podcast </h2>
+            <h1 className={podcastStyles.full_width_header_h1}>Podcast </h1>
 
                 <div className={podcastStyles.container}>
                 

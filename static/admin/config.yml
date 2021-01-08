@@ -14,7 +14,7 @@ publish_mode: editorial_workflow
 # when using the local proxy server port (for debugging on local build set to 'true')
 # open another Terminal instance and excute this command to get it running:
 # npx netlify-cms-proxy-server
-local_backend: false
+local_backend: true
 
 # These lines should *not* be indented
 # Media files will be stored in the repo under static/img

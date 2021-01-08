@@ -56,8 +56,7 @@ function ContactFormFn() {
             name="contact" action="/success/">
           <input type="hidden" name="bot-field" aria-label= "Hidden botfield input" />
           <input type="hidden" name="form-name" value="contact" aria-label= "Hidden form name " />
-
-          <h2>Contact Us</h2>
+          
           {console.log(feedbackMsg)}
           <div className={formStyles.row}>
           <div className={formStyles.col_50}>

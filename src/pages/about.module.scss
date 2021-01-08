@@ -1,0 +1,17 @@
+.full_width_image_container{
+    margin-top: 0;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    background-image: url('../images/spring.jpg');
+    background-attachment: scroll;
+
+  }
+
+  .full_width_header_h1{
+    color: white; 
+    padding: 1.5rem;
+    justify-content: center;
+  }
