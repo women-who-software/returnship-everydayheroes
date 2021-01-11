@@ -1,35 +1,73 @@
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 100%;
   padding: 1rem;
-  margin-top: 10px;
   display: flex;
-  flex-direction: row;
-  min-height: 50vh;
+  min-height: 100vh;
   color: #fff;
 }
 
-.h3 {
-  text-align:center;
+.members {
+  list-style-type: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
 }
 
-.par {
-  margin-top: 2em;
-  display: block;
+.member {
+  border: 1px solid #d0deff;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  //margin: 1rem 0;
 }
 
-.leftContainer {
-  -ms-flex: 50%; /* IE10 */
-  flex: 30%;
-  margin: auto;
-  padding:0.35rem 1.45rem 0.45rem 1.45rem;
-  width: 100px;
-  height: 180vh;
+.img_member_cover{
+  margin-bottom: 0 ;
+  max-width: 250px;
+  background-image: "../images/eh__cover.png";
 }
 
-.rightContainer {
-  margin: auto;
-  width: 1200px;
-  height: 160vh;
-  padding:1.45rem 1.45rem 0.45rem 1.45rem;
+.memberCover{
+  border-radius: 10px;
+  padding: 20px;
+  align-self: auto;
+  
 }
+
+.member:hover {
+  background: #40AAE5;
+  border: 1px solid #d0deff;
+  height: 100%;
+  width: 100%;    
+}
+
+.full_width_header_h1{
+  color: white; 
+  padding: 1.5rem;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 800px){
+  .podcasts {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .podcasts{
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .podcasts{
+      grid-template-columns: 1fr ;
+  }
+}
+
+
+
+

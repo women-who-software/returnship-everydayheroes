@@ -26,7 +26,7 @@ media_folder_relative: true
 collections:
   - name: "episode" # Used in routes, e.g., /admin/collections/blog
     label: "Episode" # Used in the UI
-    folder: "src/episodes" # The path to the folder where the documents are stored
+    folder: "src/content/episodes" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: 'ep{{episodeNumber}}'  # Filename template
     path: '{{slug}}/{{slug}}' 

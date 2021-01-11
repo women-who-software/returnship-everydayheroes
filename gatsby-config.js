@@ -25,10 +25,18 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
-        path: `${__dirname}/src/`
+        name: `episode`,
+        path: `${__dirname}/src/content/episodes`
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `member`,
+        path: `${__dirname}/src/content/members`
+      },
+    },
+    
 
     {
       resolve: `gatsby-plugin-manifest`,
