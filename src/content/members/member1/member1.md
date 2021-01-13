@@ -3,7 +3,6 @@ memberName: Michael T. Starks
 memberPhoto: MTS1.jpg
 memberNumber: "1"
 slug: member1
-markdowntype: "member"
 
 ---
 

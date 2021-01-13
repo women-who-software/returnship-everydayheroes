@@ -14,7 +14,7 @@ publish_mode: editorial_workflow
 # when using the local proxy server port (for debugging on local build set to 'true')
 # open another Terminal instance and excute this command to get it running:
 # npx netlify-cms-proxy-server
-local_backend: true
+local_backend: false
 
 # These lines should *not* be indented
 # Media files will be stored in the repo under static/img
@@ -24,6 +24,7 @@ public_folder: /img
 media_folder_relative: true
 
 collections:
+  # Episode collection
   - name: "episode" # Used in routes, e.g., /admin/collections/blog
     label: "Episode" # Used in the UI
     folder: "src/content/episodes" # The path to the folder where the documents are stored
@@ -35,44 +36,58 @@ collections:
       preview: true
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "episode"}
-      # Episode Title
       - label: "Title of the episode ex: 'Season 1 Episode 1: Ryan Seamy'"
         name: "title" 
         widget: "string"      
-      # Published date
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      # Name of guest
       - label: "Guest Name ex: 'Ryan Seamy'"
         name: "guestName"
         widget: "string"
-      # Guest Photo
       - {label: "Guest Photo", name: "guestPhoto", widget: "image"}
-      # Guest Bio
       - {label: "Guest Biography", name: "guestBio", widget: "text"}
-      # Episode number
       - label: "Episode Number ex: '1'"
         name: "episodeNumber"
         widget: "string"
         pattern: ["^[0-9]", " Must be a number "]
-      # Slug/ unique identifier for each episode
       - label: "Slug (please follow format of ep and episode number ex: 'ep1'"
         name: "slug"
         widget: "string"
         pattern: ['ep\d{1,}', "Must be lowercase ep followed by a number"]
-      # Url for vimeo of each episode
-      # Grab Vimeo ep num from client to build videoSourceURL: "https://player.vimeo.com/video/430343600?app_id=122963"
       - label: "Vimeo video episode number (found in the vimeo url) ex: '430343600' "
         name: "vim_ep_num"
         widget: "string"
         pattern: ['\d{9,}', "Must be a number thats at least 9 digits"]
-      # Url for audio of the episode
-      # Grab Buzzsprout ep num from audioSourceURL: "https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3"
       - label: "Buzzsprout audio episode url (copy the buzzsprout url and add '.mp3') ex: 'https://www.buzzsprout.com/1186835/4343081-episode-1-ryan-seamy.mp3' "
         name: "buz_ep_url"
         widget: "string"
         pattern: ['(https:\/\/www\.buzzsprout\.com\/1186835\/.+\.mp3)', "Must be a URL matching the example provided"]
-      # Body of each new episode
       - label: "Add the show notes, followed by any episode resources, then add '### Transcript' as well as the podcast Transcript (copied from buzzsprout page) "
+        name: "body"
+        widget: "markdown"
+  # Team members collection
+  - name: "member" # Used in routes, e.g., /admin/collections/blog
+    label: "Member" # Used in the UI
+    folder: "src/content/members" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: 'member{{memberNumber}}'  # Filename template
+    path: '{{slug}}/{{slug}}' 
+    preview_path: 'members/{{slug}}' 
+    editor:
+      preview: true
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "member"}
+      - label: "Member name ex: 'Ryan Seamy'"
+        name: "memberName" 
+        widget: "string"
+      - {label: "Member Photo", name: "memberPhoto", widget: "image"}
+      - label: "Member Number ex: '1' (use the next number avialable/ if there are 4 members next num is 5 etc)"
+        name: "memberNumber"
+        widget: "string"
+        pattern: ["^[0-9]", " Must be a number "]
+      - label: "Slug (please follow format of member and member number ex: 'member1'"
+        name: "slug"
+        widget: "string"
+      - label: "Add a member biography here "
         name: "body"
         widget: "markdown"
        
