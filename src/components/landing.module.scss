@@ -16,7 +16,7 @@
   .rightContainer {
     margin: auto;
     width: 500px;
-    padding:0.45rem 1.45rem 0.45rem 1.45rem;
+    padding:1.45rem 1.45rem 0.45rem 1.45rem;
   }
   
   .flex_body_container {
@@ -26,13 +26,43 @@
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     margin: auto;
+    justify-content: center;
     
+  }
+
+  .full_width_image_container{
+    margin-top: 0;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    background-image: url('../images/corona_world.jpg');
+    background-attachment: fixed;
+
+  }
+
+  .full_width_header_h1{
+    color: white; 
+    padding: 1.5rem;
+    justify-content: center;
   }
 
  /* Responsive layout - when the screen is less than 1035px wide, make the two columns stack on top of each other instead of next to each other */
  @media (max-width: 1035px) {
     .row {
-      flex-direction: column-reverse;
+      flex-direction: column;
+    }
+
+    .full_width_image_container{
+      margin-top: 0;
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-position: 50% 15%;
+      display: flex;
+      background-image: url('../images/corona_world.jpg');
+      background-attachment: local;
     }
   }
 

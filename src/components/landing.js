@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 const LandingPage = () =>{
     const data = useStaticQuery(graphql`
-    query MyQuery {
+    query Landing {
       file(relativePath: { eq: "Image_hat.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
@@ -19,7 +19,12 @@ const LandingPage = () =>{
     return (
         <div className={landingStyles.flex_body_container}>
 
-        <h2>Welcome to Everyday Heroes, a COVID-19 Podcast!</h2>
+        <h1 className={landingStyles.full_width_header_h1}>Welcome to Everyday Heroes, a COVID-19 Podcast</h1>
+
+          <div className={landingStyles.full_width_image_container}>
+
+          </div>
+
         <div className={landingStyles.row }>
           <div className={landingStyles.leftContainer}>
             
@@ -39,7 +44,7 @@ const LandingPage = () =>{
                 of yourself as a hero, don't minimize the efforts you've made to help 
                 others during these tough days. <br /><br />
                 
-                Fill out this form if you have a story you would like to share.{" "}
+                Fill out the form below if you have a story you would like to share with us today.{" "}
             </p>
           </div>
 

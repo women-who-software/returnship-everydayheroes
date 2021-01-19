@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import aboutStyles from './about.module.scss'
 import Layout from '../components/layout'
 import Meet from '../components/meet'
 
@@ -10,7 +10,12 @@ const AboutPage = () => {
 
             <Layout>
 
-                <h2> About Us</h2>
+                <h1 className={aboutStyles.full_width_header_h1}>About Us</h1>
+
+                <div className={aboutStyles.full_width_image_container}>
+      
+                </div>
+
                 <p>The purpose of this project is to collect and share stories of everyday
                 heroes during the COVID-19 pandemic. Click <Link to="/"> here</Link> if you have a story you would like to share.
                 <br /><br />

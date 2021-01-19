@@ -1,0 +1,60 @@
+
+  .full_width_header_h1{
+    color: white; 
+    padding: 1.5rem;
+    justify-content: center;
+  }
+
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  
+  .leftContainer {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    margin: auto;
+    padding:0.45rem 1.45rem 0.45rem 1.45rem;
+  }
+
+  .rightContainer {
+    margin: auto;
+    width: 500px;
+    padding:1.45rem 1.45rem 1.45rem 1.45rem;
+  }
+  
+  .flex_body_container {
+    max-width: 100%;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    
+  }
+
+  /* Responsive layout - when the screen is less than 1035px wide, make the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 1035px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+
+// When max-width is max 550 then lets display the img smaller at 300px
+@media (max-width: 550px) {
+    .rightContainer {
+        margin: auto;
+        width: 300px;
+      }
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+      }
+    
+  }
