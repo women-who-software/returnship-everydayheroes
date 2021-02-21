@@ -40,13 +40,11 @@ const ContactPage = () => {
                       fluid={data.file.childImageSharp.fluid}
                       alt=" A women wearing a blue face mask"
                       />
-                      <div>
                       ©<a href="https://pixabay.com/users/pasja1000-6355831/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5047640">
                       pasja1000
                       </a> via <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5047640">
                       Pixabay
                        </a>
-                      </div>
                   </div>
 
                 </div>

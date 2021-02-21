@@ -7,11 +7,15 @@
     display: flex;
     background-image: url('../images/spring.jpg');
     background-attachment: scroll;
-
   }
 
   .full_width_header_h1{
-    color: white; 
+    color: white;
     padding: 1.5rem;
     justify-content: center;
   }
+.text_image{
+  padding-top: 15rem;
+  padding-left: 50rem;
+  position: relative;
+}

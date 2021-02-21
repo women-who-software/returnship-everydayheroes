@@ -13,7 +13,12 @@ const AboutPage = () => {
                 <h1 className={aboutStyles.full_width_header_h1}>About Us</h1>
 
                 <div className={aboutStyles.full_width_image_container}>
-      
+                <div className={aboutStyles.text_image}>
+                ©<a href="https://pixabay.com/users/Mylene2401-10328767/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4946533">
+                Mylene2401 </a>
+                 via <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4946533">
+                  Pixabay</a>
+                </div>
                 </div>
 
                 <p>The purpose of this project is to collect and share stories of everyday
