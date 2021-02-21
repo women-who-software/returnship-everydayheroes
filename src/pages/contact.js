@@ -26,7 +26,7 @@ const ContactPage = () => {
 
               <div className={contactStyles.flex_body_container}>
 
-              
+
 
                 <div className={contactStyles.row }>
                   <div className={contactStyles.leftContainer}>
@@ -35,13 +35,20 @@ const ContactPage = () => {
 
                   </div>
 
-                  <div className={contactStyles.rightContainer}> 
-                      <Img 
+                  <div className={contactStyles.rightContainer}>
+                      <Img
                       fluid={data.file.childImageSharp.fluid}
                       alt=" A women wearing a blue face mask"
                       />
-                </div>
-            
+                      <div>
+                      ©<a href="https://pixabay.com/users/pasja1000-6355831/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5047640">
+                      pasja1000
+                      </a> via <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5047640">
+                      Pixabay
+                       </a>
+                      </div>
+                  </div>
+
                 </div>
 
             </div>
