@@ -53,9 +53,6 @@ const LandingPage = () =>{
             fluid={data.file.childImageSharp.fluid}
             alt=" A women wearing a blue face mask"
             />
-            ©<a href="https://pixabay.com/users/NickyPe-10327513/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5008824">
-            NickyPe </a> via <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5008824">
-            Pixabay</a>
           </div>
 
           </div>
