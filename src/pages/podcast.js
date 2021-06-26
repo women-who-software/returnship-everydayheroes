@@ -11,7 +11,7 @@ const PodcastPage = ({data}) => {
     return (
         <div>
             <Layout>
-                <h2> Podcast </h2>
+            <h1 className={podcastStyles.full_width_header_h1}>Podcast </h1>
 
                 <div className={podcastStyles.container}>
                 
@@ -55,7 +55,9 @@ export default PodcastPage
 
 export const pageQuery = graphql`
 query{
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }){
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: {fields: { collection: { eq: "episode"}}}){
       edges{
         node{
           frontmatter{

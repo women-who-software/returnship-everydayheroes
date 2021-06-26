@@ -1,33 +1,55 @@
 .footerContainer {
     max-width: 100%;
     margin-top: 50px;
-    padding-top: 50px;
+    //padding-top: 50px;
     color: white;
     font-size: 14px;
 }
 
 .row {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    margin-top: 5px;
   }
 
 .img_sm_logo {
-    margin-bottom: 0 !important;
-    margin-left: 10px !important;
-    width: 20px;
-    height: 20px;
+    flex : auto; 
+    flex-grow: 1;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    margin-left: 1rem ;
+    margin-right: 1rem ;
+    width: 50px;
+    //height: 30px;
+    align-items: center;
+}
+
+.img_med_logo {
+  margin-bottom: 0;
+  margin-left: 1rem ;
+  margin-right: 1rem ;
+  width: 60px;
+  padding-top: 10px;
+  //height: 30px;
 }
 
 
 // When max-width is max 750, then footer options will stack :D
 @media (max-width: 750px) {
     .row {
-      flex-direction: column-reverse;
+      flex-direction: column;
       margin-bottom: 5px !important;
+      align-items: center;
     }
     .right{
         margin-bottom: 7px;
     }
     
   }
+
+  /*<div>Icons made by 
+  <a href="https://icon54.com/" title="Pixel perfect">Pixel perfect</a>
+   from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*/
